@@ -1,2 +1,12 @@
 @import "abstracts/**/*.scss";
 @import "base/**/*.scss";
+
+body {
+    background:$primaryColor;
+}
+
+#particle-js {
+    position:fixed;
+    width:100%;
+    height:100%;
+}

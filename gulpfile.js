@@ -3,6 +3,7 @@ var gulp     = require('gulp'),
 
 require('laravel-elixir-sass-compass');
 require('laravel-elixir-imagemin');
+require('laravel-elixir-vueify');
 require('laravel-elixir-browserify-official');
 
 elixir(function (mix) {
@@ -11,9 +12,8 @@ elixir(function (mix) {
     Requires sass-globbing Ruby
     ---- */
     mix.compass('app.scss', 'public/css', {
-        require: ['sass-globbing'],
+        require: ['sass-globbing']
     });
-
     /* ----
     Scripts processing
     (with Browserify)
