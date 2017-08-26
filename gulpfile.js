@@ -2,13 +2,8 @@ var gulp     = require('gulp'),
     elixir   = require('laravel-elixir');
 
 require('laravel-elixir-sass-compass');
+require('laravel-elixir-imagemin');
 require('laravel-elixir-browserify-official');
-
-elixir.config.imagePath = 'assets/images';
-// elixir.config.images = {
-//     folder: 'assets/images',
-//     outputFolder: 'images'
-// };
 
 elixir(function (mix) {
     /* ----
@@ -17,18 +12,17 @@ elixir(function (mix) {
     ---- */
     mix.compass('app.scss', 'public/css', {
         require: ['sass-globbing'],
-        sass: './assets/scss'
     });
 
     /* ----
     Scripts processing
     (with Browserify)
     ---- */
-    mix.browserify('./assets/scripts/app.js', 'public/scripts');
+    mix.browserify('app.js');
 
     /* ----
     Image Minifying
     And Processing
     ---- */
-    mix.copy('./assets/images', 'public/images');
+    mix.imagemin();
 });
