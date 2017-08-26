@@ -16,6 +16,11 @@ body {
 .wrapper {
     max-width:$containerWidth;
     margin:0 auto;
-    padding-left:$spacing * 2;
-    padding-right:$spacing * 2;
+    padding-right:$spacing;
+    padding-left:$spacing;
+
+    @media (min-width:$screen-sm) {
+        padding-left:$spacing * 2;
+        padding-right:$spacing * 2;
+    }
 }
