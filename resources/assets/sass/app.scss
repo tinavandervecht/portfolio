@@ -1,12 +1,13 @@
 @import "abstracts/**/*.scss";
+@import "mixins/**/*.scss";
 @import "base/**/*.scss";
+@import "layout/**/*.scss";
 
-body {
-    background:$primaryColor;
+::selection {
+  background: $secondaryColor;
+  color:#ffffff;
 }
-
-#particles-js {
-    position:fixed;
-    width:100%;
-    height:100%;
+::-moz-selection {
+  background: $secondaryColor;
+  color:#ffffff;
 }

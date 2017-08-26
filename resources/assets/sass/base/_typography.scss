@@ -2,7 +2,32 @@ body {
     font-family:$bodyFont;
     font-weight:$bodyFontWeight;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family:$headerFont;
     font-weight:$headerFontWeight;
+    color:#FFFFFF;
+    letter-spacing:1px;
+}
+
+h1 {
+    font-size:35px;
+    margin:0;
+}
+
+p {
+    color:$secondaryColor;
+    font-size:16px;
+}
+
+.text-white {
+    color:#FFFFFF;
+}
+
+.text-primary {
+    color:$primaryColor;
+}
+
+.text-secondary {
+    color:$secondaryColor;
 }

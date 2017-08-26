@@ -1,0 +1,32 @@
+@mixin angle($angle: 6deg) {
+    position: relative;
+    padding-top:5%;
+    padding-bottom:5%;
+    margin-top:100px;
+    margin-bottom:200px;
+    z-index: 1;
+
+    &:before,&:after {
+        background: inherit;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        -webkit-backface-visibility: hidden; // for Chrome Windows
+    }
+
+    &:before {
+        top: 0;
+        transform: skewY($angle * -1);
+        transform-origin: 0 0;
+    }
+
+    &:after {
+        bottom: 0;
+        transform: skewY($angle * -1);
+        transform-origin: 100%;
+    }
+}

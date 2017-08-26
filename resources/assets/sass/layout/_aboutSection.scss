@@ -1,0 +1,14 @@
+.aboutSection {
+    .wrapper {
+        @include clearfix();
+    }
+    .avatar {
+        width:25%;
+        float:left;
+    }
+
+    .copy {
+        width:75%;
+        float:left;
+    }
+}

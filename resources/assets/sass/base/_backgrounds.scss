@@ -1,0 +1,12 @@
+body {
+    background:$primaryColor;
+}
+
+.bg-white {
+    background-color:#FFFFFF;
+    @include angle();
+
+    h1,h2,h3,h4,h5,h6,p {
+        color:$primaryColor;
+    }
+}
