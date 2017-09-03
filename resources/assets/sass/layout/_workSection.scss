@@ -1,0 +1,61 @@
+.workSection {
+    .projects {
+        margin-left:-1%;
+        width:102%;
+    }
+
+    .project {
+        float:left;
+        width:20%;
+        float:left;
+        text-align:center;
+        margin-bottom:$spacing / 2;
+
+        img {
+            cursor:pointer;
+            @include opacity(.6);
+            @include filter(grayscale(100%));
+            width:90%;
+            height:auto;
+            @include transition(0.4s);
+
+            &:hover, &:focus {
+                @include opacity(1);
+                @include filter(grayscale(0));
+            }
+        }
+    }
+
+    .space {
+        @include clearfix();
+    }
+
+    .modal {
+        .content {
+            @include clearfix();
+
+            .image, .website-wrapper {
+                width:25%;
+                float:left;
+
+                img {
+                    max-width:100%;
+                    height:auto;
+                }
+            }
+            .body, .title-wrapper {
+                width:75%;
+                float:left;
+            }
+
+            .website-wrapper {
+                text-align:right;
+                margin-top:24px;
+
+                a {
+                    font-size:13px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+@keyframes unfoldIn {
+    0% {
+        @include transform(scaleY(.005) scaleX(0));
+    }
+    50% {
+        @include transform(scaleY(.005) scaleX(1));
+    }
+    100% {
+        @include transform(scaleY(1) scaleX(1));
+    }
+}
+
+@keyframes unfoldOut {
+    0% {
+        @include transform(scaleY(1) scaleX(1));
+    }
+    50% {
+        @include transform(scaleY(.005) scaleX(1));
+    }
+    100% {
+        @include transform(scaleY(.005) scaleX(0));
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        @include transform(scale(0));
+    }
+    100% {
+        @include transform(scale(1));
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        @include transform(scale(1));
+    }
+    100% {
+        @include transform(scale(0));
+    }
+}
