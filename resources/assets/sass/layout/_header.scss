@@ -10,5 +10,11 @@ header, .header {
 
     .available-flag {
         margin-top:$spacing;
+        display:inline-block;
+    }
+
+    .scroll-down-img {
+        display:block;
+        margin-top:$spacing;
     }
 }
