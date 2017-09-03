@@ -1,3 +1,21 @@
 .contactSection {
     margin-bottom:150px;
+
+    @media(min-width:$screen-md) {
+        .wrapper {
+            @include clearfix();
+        }
+
+        div[class*='-column'] {
+            float:left;
+        }
+
+        .left-column {
+            width:40%;
+        }
+
+        .right-column {
+            width:60%;
+        }
+    }
 }
