@@ -1,0 +1,32 @@
+{
+  "trihq": {
+    "title": "Tri-HQ",
+    "image": "/images/projects/tri-hq.png",
+    "website": "http://trihq.ca/"
+  },
+  "everspring": {
+    "title": "Everspring Farms",
+    "image": "/images/projects/everspring.png",
+    "website": "http://everspringfarms.ca/"
+  },
+  "yazdani": {
+    "title": "Yazdani",
+    "image": "/images/projects/yazdani.png",
+    "website": "http://www.yazdaniplasticsurgery.com/"
+  },
+  "lamplighter": {
+    "title": "Lamplighter",
+    "image": "/images/projects/lamplighter.png",
+    "website": "http://www.lamplighterinn.ca"
+  },
+  "lamplighterweddings": {
+    "title": "Lamplighter Weddings",
+    "image": "/images/projects/lamplighter-weddings.png",
+    "website": "http://www.lamplighterinn.ca/wedding/"
+  },
+  "turkstra": {
+    "title": "Turkstra",
+    "image": "/images/projects/turkstra.png",
+    "website": "http://turkstralumber.com/"
+  }
+}
