@@ -52,21 +52,18 @@
         <section class="workSection">
             <div class="wrapper">
                 <h2><span class="number text-secondary">02/</span> Work.</h2>
-                <div class="projects">
-                    <?php $count = 1;
-                        $projects = json_decode($projects);
-                        foreach ($projects as $key => $project): ?>
-                            <div class="project">
-                                <img data-key="<?php echo $key; ?>" src="<?php echo $project->image; ?>" alt="<?php echo $project->title; ?>"/>
-                            </div>
-                            <?php if ($count % 6 == 0) : ?>
-                                <div class="space"></div>
-                            <?php endif;
-                            $count++;
-                        endforeach;
-                    ?>
-                    <div class="space"></div>
-                </div>
+                <?php $count = 1;
+                    $projects = json_decode($projects);
+                    foreach ($projects as $key => $project): ?>
+                        <div class="project">
+                            <img data-key="<?php echo $key; ?>" src="<?php echo $project->image; ?>" alt="<?php echo $project->title; ?>"/>
+                        </div>
+                        <?php if ($count % 6 == 0) : ?>
+                            <div class="space"></div>
+                        <?php endif;
+                        $count++;
+                    endforeach;
+                ?>
             </div>
             <div id="modal-container">
                 <div class="modal-background">
