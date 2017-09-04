@@ -1,11 +1,11 @@
 .contactSection {
     margin-bottom:150px;
 
-    @media(min-width:$screen-md) {
-        .wrapper {
-            @include clearfix();
-        }
+    .left-column {
+        margin-bottom:$spacing;
+    }
 
+    @media(min-width:$screen-md) {
         div[class*='-column'] {
             float:left;
         }

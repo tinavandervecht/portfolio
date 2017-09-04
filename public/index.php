@@ -59,7 +59,7 @@
                             <div class="project">
                                 <img data-key="<?php echo $key; ?>" src="<?php echo $project->image; ?>" alt="<?php echo $project->title; ?>"/>
                             </div>
-                            <?php if ($count % 5 == 0) : ?>
+                            <?php if ($count % 6 == 0) : ?>
                                 <div class="space"></div>
                             <?php endif;
                             $count++;

@@ -56,6 +56,11 @@ form {
         &:hover, &:focus {
             background:$secondaryColor;
         }
+
+        @media (max-width:$screen-sm) {
+            display:block;
+            width:100%;
+        }
     }
 
     .error-empty, .error-invalid {
