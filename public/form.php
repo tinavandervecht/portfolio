@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (count($errors) > 0) {
         $_SESSION['errors'] = $errors;
         $_SESSION['values'] = $values;
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        header('Location: ' . $_SERVER['HTTP_REFERER'] . '#contactSection');
         exit;
     }
 }
