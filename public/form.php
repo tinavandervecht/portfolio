@@ -51,4 +51,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header('Location: ' . $_SERVER['HTTP_REFERER'] . '#contactSection');
         exit;
     }
+
+    $emails = file_get_contents('./emails.json');
+    $emails = json_decode($emails, true);
+    $emails['email-' . count($emails)] = $values;
+
+    file_put_contents('./emails.json', json_encode($emails));
+
+    $_SESSION['success'] = true;
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
