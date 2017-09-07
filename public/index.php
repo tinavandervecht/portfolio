@@ -21,6 +21,9 @@
     ?>
     <script type="text/javascript">
         var projects = <?php echo $projects; ?>;
+        <?php if (isset($_SESSION['success'])) : ?>
+            var successfulSubmission = true;
+        <?php endif; ?>
     </script>
 </head>
 
@@ -88,7 +91,7 @@
             </div>
         </section>
 
-        <section class="bg-white contactSection">
+        <section class="bg-white contactSection" id="contactSection">
             <div class="wrapper">
                 <h2><span class="number text-secondary">03/</span> Contact.</h2>
                 <div class="left-column">
