@@ -57,6 +57,11 @@ form {
             background:$secondaryColor;
         }
 
+        &:disabled {
+            background:$secondaryColor !important;
+            cursor:not-allowed;
+        }
+
         @media (max-width:$screen-sm) {
             display:block;
             width:100%;

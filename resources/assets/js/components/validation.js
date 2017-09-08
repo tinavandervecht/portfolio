@@ -5,6 +5,9 @@ exports.init = init;
 function init() {
     $('form').on('submit', function(e) {
         e.preventDefault();
+        var submitButton = $('button[type="submit"]');
+        submitButton.prop('disabled', true);
+        submitButton.text('Processing...');
 
         $('.input', this).removeClass('error-invalid');
         $('.input', this).removeClass('error-empty');
@@ -42,6 +45,8 @@ function init() {
         }
 
         if (noFirstName || noLastName || noEmail || noMessage || !noWebsite || invalidEmail) {
+            submitButton.text('Send Message');
+            submitButton.prop('disabled', false);
             return false;
         } else {
             $(this).unbind().submit();
