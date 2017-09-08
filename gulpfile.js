@@ -25,4 +25,10 @@ elixir(function (mix) {
     And Processing
     ---- */
     mix.imagemin();
+
+    /* ----
+    Copying file overs
+    ---- */
+    mix.copy('resources/views', 'public');
+    mix.copy('resources/favicons', 'public');
 });

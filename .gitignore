@@ -4,8 +4,4 @@ bower_components
 *.css.map
 .DS_Store
 
-public/emails.json
-public/css/*
-public/fonts/*
-public/images/*
-public/js/*
+public/**/*
