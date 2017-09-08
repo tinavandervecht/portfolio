@@ -38,6 +38,7 @@
     <div id="particles-js"></div>
 
     <div id="main">
+        <?php include("./partials/navigation.php"); ?>
         <header class="header wrapper">
             <h1>Tina Vandervecht.</h1>
             <p>Developer. Passionate about trivia. Chronic talker.</p>
@@ -45,7 +46,7 @@
             <img src="/images/arrow-down.svg" alt="Scroll Down" class="scroll-down-img" />
         </header>
 
-        <section class="bg-white aboutSection">
+        <section class="bg-white aboutSection" id="aboutSection">
             <div class="wrapper">
                 <h2><span class="number text-secondary">01/</span> About.</h2>
                 <div class="avatar">
@@ -59,7 +60,7 @@
             </div>
         </section>
 
-        <section class="workSection">
+        <section class="workSection" id="workSection">
             <div class="wrapper">
                 <h2><span class="number text-secondary">02/</span> Work.</h2>
                 <?php $count = 1;
