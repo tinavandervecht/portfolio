@@ -2,7 +2,14 @@
     .avatar {
         img {
             width:100%;
-            max-width:250px;
+            max-width:200px;
+            @media(min-width:1140px) {
+                max-width:250px;
+            }
+        }
+
+        @media(max-width:$screen-md) {
+            text-align:center;
         }
     }
 
