@@ -4,6 +4,7 @@
     "babel-polyfill": "^6.22.0",
     "browserify": "^13.0.0",
     "gulp": "^3.8.8",
+    "hamburgers": "^0.9.1",
     "jquery": "^2.2.1",
     "laravel-elixir": "^6.0.0-15",
     "laravel-elixir-browserify-official": "^0.1.3",

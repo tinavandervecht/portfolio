@@ -1,10 +1,17 @@
 nav, .nav {
     position:fixed;
     width:100%;
-    top:0;
+    top:-100%;
     left:0;
     background:$primaryColor;
     z-index:2;
+    @include transition(0.3s);
+
+    &.active {
+        top:0%;
+        @include transition(0.3s);
+    }
+
     ul {
         width:50%;
         margin:0 auto;
@@ -48,5 +55,15 @@ nav, .nav {
                     width: #{100%/$i}; } }
         }
 
+    }
+}
+
+.hamburger {
+    position:absolute;
+    right:9px;
+    top:2px;
+
+    &:focus {
+        outline:none;
     }
 }
