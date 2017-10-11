@@ -4,7 +4,7 @@
             <a href="#aboutSection">About</a>
         </li>
         <li>
-            <a href="#workSection">Work</a>
+            <a href="#skillsSection">Skills</a>
         </li>
         <li>
             <a href="#contactSection">Contact</a>

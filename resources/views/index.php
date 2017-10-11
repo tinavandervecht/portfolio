@@ -35,6 +35,11 @@
 <body>
     <div id="particles-js"></div>
 
+    <div class="navi">
+        <img class="fairy" src="/images/navi.png" alt="Navi" />
+        <img class="speech" src="/images/navi-speech.png" alt='Psst! Play "Zeldas Lullaby!"' />
+    </div>
+
     <div id="main">
         <?php include("./partials/navigation.php"); ?>
         <header class="header wrapper">
@@ -136,6 +141,7 @@
             session_destroy();
         ?>
     </div>
+    <script src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
