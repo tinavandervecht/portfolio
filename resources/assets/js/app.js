@@ -1,7 +1,6 @@
 window.$ = window.jQuery = require('jquery');
 
 var particles = require('./components/background/particles.js');
-var modal = require('./components/modal.js');
 var hamburgers = require('./components/hamburgers.js');
 var validation = require('./components/validation.js');
 var navigation = require('./components/navigation.js');
@@ -9,7 +8,6 @@ var toastr = require('toastr');
 
 $(document).ready(function () {
     particles.init();
-    modal.init();
     hamburgers.init();
     validation.init();
     navigation.init();

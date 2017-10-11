@@ -24,10 +24,8 @@
 
     <?php
         session_start();
-        $projects = file_get_contents('./projects.json');
     ?>
     <script type="text/javascript">
-        var projects = <?php echo $projects; ?>;
         <?php if (isset($_SESSION['success'])) : ?>
             var successfulSubmission = true;
         <?php endif; ?>
@@ -60,42 +58,18 @@
             </div>
         </section>
 
-        <section class="workSection" id="workSection">
+        <section class="skillsSection" id="skillsSection">
             <div class="wrapper">
-                <h2><span class="number text-secondary">02/</span> Work.</h2>
-                <?php $count = 1;
-                    $projects = json_decode($projects);
-                    foreach ($projects as $key => $project): ?>
-                        <div class="project">
-                            <img data-key="<?php echo $key; ?>" src="<?php echo $project->image; ?>" alt="<?php echo $project->title; ?>"/>
-                        </div>
-                        <?php if ($count % 6 == 0) : ?>
-                            <div class="space"></div>
-                        <?php endif;
-                        $count++;
-                    endforeach;
-                ?>
-            </div>
-            <div id="modal-container">
-                <div class="modal-background">
-                    <div class="modal">
-                        <div class="content">
-                            <div class="title-wrapper">
-                                <h3 class="title">title</h3>
-                            </div>
-                            <div class="website-wrapper">
-                                <a href="" class="website text-secondary" target="_blank">visit website</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="image">
-                                <img src="#" alt="#" />
-                            </div>
-                            <div class="body">
-                            </div>
-                        </div>
-                    </div>
+                <h2><span class="number text-secondary">02/</span> Skills.</h2>
+                <div class="socialMedia">
+                    <a href="https://www.linkedin.com/in/tinavv" target="_blank">
+                        <img src="/images/social_media/linkedin-logo.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/tinavandervecht" target="_blank">
+                        <img src="/images/social_media/github-logo.png" alt="GitHub" />
+                    </a>
                 </div>
+
             </div>
         </section>
 
