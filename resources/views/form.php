@@ -58,6 +58,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     file_put_contents('./emails.json', json_encode($emails));
 
+    $to = "tvandervecht@gmail.com";
+    $subject = "Portfolio Form Submission From " . $values['first_name'] . ' ' . $values['last_name'];
+    $msg = "This is a portfolio submission.\n\n
+    name: " . $values['first_name'] . " " . $values['last_name'] . "\n
+    email: " . $values['email'] . "\n
+    message: " . $values['message'];
+    $headers = "From: tvandervecht+portfolio_submission@gmail.com" . "\r\n";
+
+    mail($to,$subject,$msg,$headers);
+
     $_SESSION['success'] = true;
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
