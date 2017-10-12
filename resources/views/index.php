@@ -75,6 +75,8 @@
                     </a>
                 </div>
 
+                <?php include("./partials/skills.php"); ?>
+
             </div>
         </section>
 
