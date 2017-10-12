@@ -120,8 +120,25 @@
             </div>
         </section>
 
+        <div class="hidden">
+            <?php include("./partials/audio.php"); ?>
+        </div>
+
+        <div id="modal-container">
+            <div class="modal-background">
+                <div class="modal">
+                    <div class="content">
+                        <h6 id="quit-game">QUIT GAME</h6>
+                        <div id="game"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="footer">
-            <p class="text-secondary">Copyright &copy; <?php echo date('Y'); ?> Tina Vandervecht</p>
+            <p class="text-secondary">Copyright &copy; <?php echo date('Y'); ?> Tina Vandervecht.
+                <br/>
+                All icons and verbiage that remind you of Zelda belongs to Nintendo. Pls don't sue.</p>
         </footer>
 
         <?php

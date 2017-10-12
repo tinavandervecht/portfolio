@@ -46,17 +46,11 @@ html,body {
         text-align:center;
 
         .modal {
-            background:#FFFFFF;
             display:inline-block;
             position:relative;
-            padding: $spacing;
             text-align:left;
             width:80%;
             max-width:750px;
-
-            .title {
-                color:$primaryColor;
-            }
         }
     }
 }

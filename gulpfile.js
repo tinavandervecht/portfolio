@@ -29,6 +29,7 @@ elixir(function (mix) {
     /* ----
     Copying file overs
     ---- */
+    mix.copy('resources/assets/audio', 'public/audio');
     mix.copy('resources/views', 'public');
     mix.copy('resources/favicons', 'public');
 });

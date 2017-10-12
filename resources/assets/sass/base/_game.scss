@@ -1,0 +1,19 @@
+
+#quit-game {
+    position:absolute;
+    top:-24px;
+    right:0;
+    color:#FFFFFF;
+    cursor:pointer;
+    margin:0;
+}
+
+#game {
+    width: 100%;
+    height: 80vh;
+    max-height:350px;
+    overflow: hidden;
+    background:url('../images/water.png');
+    background-repeat:repeat;
+    background-position:0%;
+}
