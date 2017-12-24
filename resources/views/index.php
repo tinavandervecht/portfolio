@@ -131,7 +131,10 @@
                 <div class="modal">
                     <div class="content">
                         <h6 id="quit-game">QUIT GAME</h6>
-                        <div id="game"></div>
+                        <iframe id="game" width="800" height="400" frameborder="0" allowfullscreen></iframe>
+                        <p class="small-browser">
+                            This game is played best on desktop. But feel proud in the knowledge that at least you found it!
+                        </p>
                     </div>
                 </div>
             </div>
