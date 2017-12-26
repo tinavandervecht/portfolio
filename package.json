@@ -11,6 +11,7 @@
     "laravel-elixir-imagemin": "^0.2.3",
     "laravel-elixir-sass-compass": "^0.5.0",
     "laravel-elixir-vueify": "^2.0.0",
+    "progressbar.js": "^1.0.1",
     "toastr": "^2.1.2"
   },
   "browser": {
