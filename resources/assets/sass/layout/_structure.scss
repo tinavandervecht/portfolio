@@ -12,16 +12,3 @@ body {
 #main {
     z-index:1;
 }
-
-.wrapper {
-    max-width:$containerWidth;
-    margin:0 auto;
-    padding-right:$spacing;
-    padding-left:$spacing;
-    @include clearfix();
-
-    @media (min-width:$screen-sm) {
-        padding-left:$spacing * 2;
-        padding-right:$spacing * 2;
-    }
-}

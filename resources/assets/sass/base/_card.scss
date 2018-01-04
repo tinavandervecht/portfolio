@@ -1,0 +1,12 @@
+.card {
+    background:$secondaryColor;
+    color:#fff;
+    @include border-radius($border-radius-large);
+    padding: $spacing;
+    margin-bottom:$spacing;
+}
+
+.card-title {
+    margin-bottom:-4px;
+    margin-left:8px;
+}

@@ -1,7 +1,13 @@
 header, .header {
-    padding-top:$spacing * 2;
-    @media (min-width: $screen-sm) {
-        padding-top:350px;
+    min-height:100vh;
+
+    h1 {
+        padding-top:$spacing * 2;
+        color:#FFFFFF;
+
+        @media (min-width: $screen-sm) {
+            padding-top:350px;
+        }
     }
 
     p {

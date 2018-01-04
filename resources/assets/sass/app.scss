@@ -3,20 +3,15 @@
 *************************/
 @import "compass/css3";
 
+@import "abstracts/_variables.scss";
+
 /***********************
 * Node Modules
 *************************/
 @import "../../../node_modules/toastr/toastr.scss";
-
-$hamburgers-padding-x: 8px;
-$hamburgers-padding-y: 8px;
-$hamburger-layer-width: 30px;
-$hamburger-layer-height: 2px;
-$hamburger-layer-color: #FFF;
-@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 @import "abstracts/**/*.scss";
-@import "mixins/**/*.scss";
 @import "base/**/*.scss";
 @import "layout/**/*.scss";
 
