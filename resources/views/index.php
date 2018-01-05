@@ -87,23 +87,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2">
-                        <div class="card"></div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card"></div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card"></div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card"></div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card"></div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card"></div>
+                    <div class="col-md-12">
+                        <div class="insta-feed">
+                            <div class="insta-overlay"></div>
+                            <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                            <iframe src="https://snapwidget.com/embed/490305" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="row">

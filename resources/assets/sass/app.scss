@@ -11,8 +11,8 @@
 @import "../../../node_modules/toastr/toastr.scss";
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
-@import "abstracts/**/*.scss";
 @import "base/**/*.scss";
+@import "components/**/*.scss";
 @import "layout/**/*.scss";
 
 ::selection {
