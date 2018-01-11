@@ -122,25 +122,26 @@
                     <div class="col-md-1"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="insta-feed">
-                            <!-- https://api.instagram.com/v1/users/self/media/recent/?access_token=1703444992.48ea03f.3d9056b104b84e889d7f8e1539804e51 -->
-                            <!-- access token -->
-                            <!-- 1703444992.48ea03f.3d9056b104b84e889d7f8e1539804e51 -->
-                            <!-- <div class="insta-overlay"></div>
-                            <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                            <iframe src="https://snapwidget.com/embed/490305" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                        <div class="card _skills">
-                            - this is where a graph of my skills will go. 
+                        <div class="insta-feed row">
+                            <?php
+                                $json = file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token=1703444992.48ea03f.3d9056b104b84e889d7f8e1539804e51');
+                                $obj = json_decode($json);
+
+                                foreach($obj->data as $key => $item):
+                                    if ($key < 8): ?>
+                                    <div class="col-md-3">
+                                        <a href="<?php echo $item->link; ?>" target="_blank">
+                                            <div class="insta-img"
+                                                style="background:url(<?php echo $item->images->standard_resolution->url; ?>)"
+                                            ></div>
+                                        </a>
+                                    </div>
+                                    <?php endif;
+                                endforeach; ?>
                         </div>
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
             </div>
         </section>
