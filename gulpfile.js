@@ -6,13 +6,16 @@ require('laravel-elixir-imagemin');
 require('laravel-elixir-vueify');
 require('laravel-elixir-browserify-official');
 
+var inProduction = elixir.config.production;
+
 elixir(function (mix) {
     /* ----
     SCSS processing
     Requires sass-globbing Ruby
     ---- */
     mix.compass('app.scss', 'public/css', {
-        require: ['sass-globbing']
+        require: ['sass-globbing'],
+        style: inProduction ? "compressed" : ""
     });
     /* ----
     Scripts processing
