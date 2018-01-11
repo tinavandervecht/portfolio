@@ -15,7 +15,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1a1d34">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Heebo:100,400|News+Cycle:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,400|VT323:100,400" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
 
     <!--[if lt IE 9]>
@@ -45,7 +45,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Tina Vandervecht.</h1>
+                        <h1>Tina Vandervecht.<img src="/images/sprites/ocarina.png" /></h1>
                         <p>Developer. Passionate about trivia. Chronic talker.</p>
                         <a href="mailto:tvandervecht@gmail.com" class="available-flag">Available for freelance.</a>
                         <img src="/images/arrow-down.svg" alt="Scroll Down" class="scroll-down-img" />
@@ -57,51 +57,90 @@
         <section id="aboutSection">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="/images/avatar.png" alt="Picture of Tina Vandervecht" style="max-width:100%"/>
+                    <div class="col-md-3">
+                        <div class="card _avatar">
+                            <img src="/images/sprites/hey-listen.png" class="card-title" alt="Hey! Listen!" />
+                            <img src="/images/avatar.png" alt="Picture of Tina Vandervecht" style="max-width:100%"/>
+                        </div>
                     </div>
                     <div class="col-md-8">
-                        <h1 class="card-title">About</h1>
-                        <div class="card">
-                            <h2>I'm a full stack developer with a passion for front end from London, Ontario.</h2>
+                        <div class="card _about">
+                            <img src="/images/sprites/mask.png" class="card-icon" />
+                            <img src="/images/sprites/about-title.png" class="card-title" alt="About" />
+                            <h2>I'm a full-stack developer with a passion for front end from London, Ontario.</h2>
                             <p>
-                                this is where a super generic paragraph about me will go. Muffin jelly cheesecake lollipop cheesecake chocolate bar pastry marzipan. Marzipan halvah cotton candy. Toffee jujubes cupcake donut oat cake biscuit dessert jelly biscuit. Tart sweet roll powder pastry cake ice cream cupcake. Sweet lollipop bonbon chocolate powder apple pie. Jelly beans tart chocolate gingerbread topping jelly. Liquorice dragée oat cake tart candy canes pudding danish marzipan cheesecake. Danish sugar plum cheesecake apple pie pie marshmallow biscuit. Sugar plum icing jujubes gummi bears macaroon lollipop dragée.
+                                I enjoy taking ambitious ideas and timelines and delivering simple (dare I say elegant?), creative results.
+                                When I'm not diving down the rabbit hole of code, I'm either learning random facts on the internet (because the internet never lies) or drinking wine and wishing I was the inquistor in Dragon Age: Inquisition.
                             </p>
-                            <!-- <p>I’m Tina, a full-stack developer with a passion for all things front-end. My language knowledge reflects that, with a strong grasp on PHP, Javascript (and several packages like VueJS, D3, and JQuery), and CSS/SCSS. I have experience with several CMS including Concrete5, Wordpress, Drupal, and Wix (and a resulting passion for finding the cleanest way to implement each CMS).</p> -->
-                            <!-- <p>A little more personally, my three favourite things are wine, sleeping, and my cats. An average night consists of me playing Dragon Age: Inquisition while I learn random trivia facts on the internet (because the internet never lies). I aspire to be the most basic I can be.</p> -->
+                            <p>
+                                <a href="mailto:tvandervecht@gmail.com">Why not say hi?</a> You can never have too many friends!
+                            </p>
+                            <ul class="list-inline social-media-links">
+                                <li><a href="https://www.instagram.com/scatterednebulous/" target="_blank"><img src="/images/social_media/instagram-8bit.png" alt="Instagram" /></a></li>
+                                <li><a href="https://github.com/tinavandervecht" target="_blank"><img src="/images/social_media/github-8bit.png" class="github-icon" alt="Instagram" /></a></li>
+                                <li><a href="https://ca.linkedin.com/in/tinavv" target="_blank"><img src="/images/social_media/linkedin-8bit.png" alt="Instagram" /></a></li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="col-md-1"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <h1 class="card-title">Tools/Languages</h1>
-                        <div class="card">
-                            - list of important languages/tools I know/use
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <div class="card _toolsLanguages">
+                            <img src="/images/sprites/shield.png" class="card-icon" />
+                            <img src="/images/sprites/tools-languages-title.png" class="card-title" alt="Tools & Languages" />
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS/Sass</li>
+                                <li>Javascript/JQuery</li>
+                                <li>VueJS</li>
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>Wordpress</li>
+                                <li>Concrete5</li>
+                                <li>Adobe Photoshop</li>
+                                <li>Sketch</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h1 class="card-title">Fun Facts</h1>
-                        <div class="card">
-                            - list of random facts
+                    <div class="col-md-7">
+                        <div class="card _funFacts">
+                            <img src="/images/sprites/chicken.png" class="card-icon" />
+                            <img src="/images/sprites/fun-facts-title.png" class="card-title" alt="Fun Facts" />
+                            <ul>
+                                <li>I'm a cat-lady-in-training</li>
+                                <li>I love to make people laugh!</li>
+                                <li>I'm afraid of the dark (still)</li>
+                                <li>I have some pretty serious anxiety about finishing work <em>before</em> deadlines</li>
+                                <li>I love teaching (and learning!) new things</li>
+                                <li>I can't wait until I'm old and curmudgeonly</li>
+                                <li>I wanna be the most basic ✌️</li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="col-md-1"></div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="insta-feed">
-                            <div class="insta-overlay"></div>
+                            <!-- https://api.instagram.com/v1/users/self/media/recent/?access_token=1703444992.48ea03f.3d9056b104b84e889d7f8e1539804e51 -->
+                            <!-- access token -->
+                            <!-- 1703444992.48ea03f.3d9056b104b84e889d7f8e1539804e51 -->
+                            <!-- <div class="insta-overlay"></div>
                             <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                            <iframe src="https://snapwidget.com/embed/490305" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                            <iframe src="https://snapwidget.com/embed/490305" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe> -->
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="card-title">Skills</h1>
-                        <div class="card">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="card _skills">
                             - this is where a graph of my skills will go. 
                         </div>
                     </div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
         </section>
@@ -109,56 +148,57 @@
         <section id="contactSection">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="card-title">Contact</h1>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="col-md-3">
-                        <div class="card">
-                            <p>Get in touch and say hello!<br/>
-                            Whether you have a work enquiry or<br/>
-                            simply want to find out more, let’s talk.</p>
+                        <div class="card _contactInfo">
+                            <img src="/images/sprites/contact-title.png" class="card-title" alt="Contact" />
+                            <p>Take a sec and say hi!<br/>
+                            Whether you have a work enquiry or
+                            simply wanna find out more, let’s talk.</p>
                             <a href="mailto:tvandervecht@gmail.com">Send me an email.</a>
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <div class="card">
+                        <div class="card _contact">
+                            <img src="/images/sprites/fairy.png" class="card-icon" />
                             <form method="POST" action="./form.php">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="input  <?php echo getEmptyError('first_name', 'empty'); ?>" id="first-name">
-                                            <label for="first_name">First Name</label>
-                                            <input type="text" name="first_name" value="<?php echo getValue('first_name'); ?>" />
+                                            <label for="first_name" class="sr-only">First Name</label>
+                                            <input type="text" name="first_name" placeholder="First Name" value="<?php echo getValue('first_name'); ?>" />
                                             <small class="error-empty-message">First name is required.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="input <?php echo getEmptyError('last_name', 'empty'); ?>" id="last-name">
-                                            <label for="last_name">Last Name</label>
-                                            <input type="text" name="last_name" value="<?php echo getValue('last_name'); ?>" />
+                                            <label for="last_name" class="sr-only">Last Name</label>
+                                            <input type="text" name="last_name" placeholder="Last Name" value="<?php echo getValue('last_name'); ?>" />
                                             <small class="error-empty-message">Last name is required.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="input <?php echo getEmptyError('email', 'empty'); ?> <?php echo getEmptyError('email', 'invalid'); ?>" id="email">
-                                            <label for="email">Email</label>
-                                            <input type="text" name="email" value="<?php echo getValue('email'); ?>" />
+                                            <label for="email" class="sr-only">Email</label>
+                                            <input type="text" name="email" placeholder="Email" value="<?php echo getValue('email'); ?>" />
                                             <small class="error-empty-message">Email is required.</small>
                                             <small class="error-invalid-message">Email must be valid.</small>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="input" id="website">
-                                    <label for="website">Website</label>
-                                    <input type="text" name="website" />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="input" id="website">
+                                            <label for="website" class="sr-only">Website</label>
+                                            <input type="text" name="website" placeholder="Website" value="<?php echo getValue('website'); ?>" />
+                                        </div>
+                                        <div class="input <?php echo getEmptyError('message', 'empty');?>" id="message">
+                                            <label for="message" class="sr-only">Message</label>
+                                            <textarea name="message" rows="5" placeholder="Message"><?php echo getValue('message'); ?></textarea>
+                                            <small class="error-empty-message">A message is required.</small>
+                                        </div>
+                                        <button type="submit">Send Message</button>
+                                    </div>
                                 </div>
-                                <div class="input <?php echo getEmptyError('message', 'empty');?>" id="message">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" rows="5"><?php echo getValue('message'); ?></textarea>
-                                    <small class="error-empty-message">A message is required.</small>
-                                </div>
-                                <button type="submit">Send Message</button>
                             </form>
                         </div>
                     </div>

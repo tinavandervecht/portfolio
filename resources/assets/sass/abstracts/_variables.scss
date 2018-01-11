@@ -1,12 +1,17 @@
 // Font Variables
-$headerFont:       'News Cycle', sans-serif;
-$bodyFont:         'Heebo', sans-serif;
-$headerFontWeight: 700;
+$headerFont:       'VT323', monospace;
+$bodyFont:         'Catamaran', sans-serif;
+$headerFontWeight: 100;
 $bodyFontWeight:   100;
 
 // Colours
 $primaryColor:   #1A1D34;
 $secondaryColor: #9397B8;
+$brightBlue:     #04acdd;
+$lightBlue:      #a3e1f2;
+$lightGrey:      #E2E2E2;
+$darkGrey:       #636363; //1F1F1F
+// ["#a3e1f2", "#04acdd", "#e4efff"]
 
 // Sizes
 $spacing:        30px;

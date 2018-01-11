@@ -1,12 +1,91 @@
 .card {
-    background:$secondaryColor;
-    color:#fff;
-    @include border-radius($border-radius-large);
+    background:$primaryColor;
+    color:$brightBlue;
+    border:1px solid $brightBlue;
     padding: $spacing;
     margin-bottom:$spacing;
-}
+    position:relative;
 
-.card-title {
-    margin-bottom:-4px;
-    margin-left:8px;
+    .card-icon, .card-title {
+        position:absolute;
+    }
+
+    &._avatar {
+        padding:0;
+        width:80%;
+        margin-top:90px;
+
+        .card-title {
+            right:-70px;
+            top:30px;
+        }
+    }
+
+    &._about {
+        width:60%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:16px;
+
+        .card-title {
+            left:-56px;
+            bottom:30px;
+        }
+
+        .card-icon {
+            top:-17px;
+            right:-17px;
+        }
+    }
+
+    &._toolsLanguages {
+        margin-top:40px;
+        .card-title {
+            left:-120px;
+        }
+
+        .card-icon {
+            top:-16px;
+            right:-20px;
+            @include transform(rotate(-70deg));
+        }
+    }
+
+    &._funFacts {
+        margin-top:200px;
+        width:70%;
+        float:right;
+        .card-title {
+            right:-90px;
+            top:30px;
+        }
+
+        .card-icon {
+            bottom:-17px;
+            left:-18px;
+        }
+    }
+    
+    &._skills {
+        margin-top:80px;
+    }
+
+    &._contactInfo {
+        margin-top:100px;
+        .card-title {
+            right: -65px;
+            top: 5px;
+            z-index: 1;
+        }
+    }
+
+    &._contact {
+        width:80%;
+        margin-top:150px;
+        .card-icon {
+            top:50px;
+            left:-17px;
+            @include transform(rotate(31deg));
+        }
+    }
 }
