@@ -140,6 +140,8 @@
                                     </div>
                                     <?php endif;
                                 endforeach; ?>
+                                <img src="/images/sprites/boomerang.png" class="card-icon _boomerang" />
+                                <img src="/images/sprites/bombchu.png" class="card-icon _bombchu" />
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 .insta-feed {
     margin-top: 100px;
+    position:relative;
 
     .insta-img {
         width:100%;
@@ -12,6 +13,20 @@
 
         &:hover, &:focus {
             @include filter(grayscale(0%));
+        }
+    }
+
+    .card-icon {
+        position:absolute;
+
+        &._bombchu {
+            left:190px;
+            top:120px;
+        }
+
+        &._boomerang {
+            bottom:-10px;
+            right:-10px;
         }
     }
 }

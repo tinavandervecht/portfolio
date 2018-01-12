@@ -1,0 +1,26 @@
+._funFacts, ._toolsLanguages {
+    ul {
+        list-style-type: none;
+        padding-left:0;
+
+        li {
+            background-repeat: no-repeat;
+            background-size:19px;
+            background-position: 0 2px;
+            padding-left:28px;
+            font-size:18px;
+            margin-bottom:8px;
+        }
+
+        $medallionCount: 1;
+        @for $i from 1 through 10 {
+            li:nth-child(#{$i}) {
+                background-image: url('/images/sprites/medallions/#{nth($medallions, $medallionCount)}');
+            }
+            $medallionCount: $medallionCount + 1;
+            @if $medallionCount > 6 {
+                $medallionCount: 1;
+            }
+        }
+    }
+}
