@@ -3,7 +3,7 @@
     bottom:0;
     left:15px;
     z-index:2;
-    -webkit-animation:bounce 2s infinite;
+    @include animation(bounce 2s infinite);
     cursor:pointer;
 
     .speech {
@@ -26,11 +26,8 @@
         }
     }
 
-}
+    @media (max-width:$screen-md) {
+        display:none;
+    }
 
-@-webkit-keyframes bounce {
-  0%       { bottom:0px; }
-  25%, 75% { bottom:2.5px; }
-  50%      { bottom:5px; }
-  100%     {bottom:0px;}
 }

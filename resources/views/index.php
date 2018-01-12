@@ -7,6 +7,7 @@
     <title>Tina Vandervecht - Developer</title>
     <meta name="description" content="The portfolio of Tina Vandervecht.">
     <meta name="author" content="Tina Vandervecht">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -48,7 +49,7 @@
                         <h1>
                             <span class="title"></span>
                             <span class="blinking-cursor">|</span>
-                            <img src="/images/sprites/ocarina.png" />
+                            <img src="/images/sprites/ocarina.png" class="title-icon" />
                         </h1>
                         <p>Developer. Passionate about trivia. Chronic talker.</p>
                         <a href="mailto:tvandervecht@gmail.com" class="available-flag">Available for freelance.</a>
@@ -62,12 +63,12 @@
             <div class="container">
                 <div class="row">
                     <div class="card _avatar col-md-2">
-                        <img src="/images/sprites/hey-listen.png" class="card-title" alt="Hey! Listen!" />
+                        <img src="/images/sprites/hey-listen.png" class="card-title hidden-xs hidden-sm" alt="Hey! Listen!" />
                         <img src="/images/avatar.png" alt="Picture of Tina Vandervecht" style="max-width:100%"/>
                     </div>
                     <div class="card _about col-md-5">
-                        <img src="/images/sprites/mask.png" class="card-icon" />
-                        <img src="/images/sprites/about-title.png" class="card-title" alt="About" />
+                        <img src="/images/sprites/mask.png" class="card-icon hidden-xs hidden-sm" />
+                        <img src="/images/sprites/about-title.png" class="card-title hidden-xs hidden-sm" alt="About" />
                         <h2>I'm a full-stack developer with a passion for front end from London, Ontario.</h2>
                         <p>
                             I enjoy taking ambitious ideas and timelines and delivering simple (dare I say elegant?), creative results.
@@ -90,8 +91,9 @@
             <div class="container">
                 <div class="row">
                     <div class="card _toolsLanguages col-md-3">
-                        <img src="/images/sprites/shield.png" class="card-icon" />
-                        <img src="/images/sprites/tools-languages-title.png" class="card-title" alt="Tools & Languages" />
+                        <img src="/images/sprites/shield.png" class="card-icon hidden-xs hidden-sm" />
+                        <img src="/images/sprites/tools-languages-title.png" class="card-title hidden-xs hidden-sm" alt="Tools & Languages" />
+                        <h2 class="hidden-md hidden-lg">Tools & Languages</h2>
                         <ul>
                             <li>HTML</li>
                             <li>CSS/Sass</li>
@@ -106,8 +108,9 @@
                         </ul>
                     </div>
                     <div class="card _funFacts col-md-4">
-                        <img src="/images/sprites/chicken.png" class="card-icon" />
-                        <img src="/images/sprites/fun-facts-title.png" class="card-title" alt="Fun Facts" />
+                        <img src="/images/sprites/chicken.png" class="card-icon hidden-xs hidden-sm" />
+                        <img src="/images/sprites/fun-facts-title.png" class="card-title hidden-xs hidden-sm" alt="Fun Facts" />
+                        <h2 class="hidden-md hidden-lg">Fun Facts</h2>
                         <ul>
                             <li>I'm a cat-lady-in-training</li>
                             <li>I love to make people laugh!</li>
@@ -122,11 +125,11 @@
             </div>
         </section>
 
-        <section id="socialMediaSection">
+        <section id="socialMediaSection" class="hidden-xs hidden-sm">
             <div class="container">
                 <div class="row">
                     <div class="insta-feed col-md-8" id="instaCard">
-                        <img src="/images/sprites/instagram.png" class="card-title" />
+                        <img src="/images/sprites/instagram.png" class="card-title hidden-xs hidden-sm" />
 
                         <div class="row">
                         <?php
@@ -144,8 +147,8 @@
                                 </div>
                                 <?php endif;
                             endforeach; ?>
-                            <img src="/images/sprites/boomerang.png" class="card-icon _boomerang" />
-                            <img src="/images/sprites/bombchu.png" class="card-icon _bombchu" />
+                            <img src="/images/sprites/boomerang.png" class="card-icon _boomerang hidden-xs hidden-sm" />
+                            <img src="/images/sprites/bombchu.png" class="card-icon _bombchu hidden-xs hidden-sm" />
                         </div>
                     </div>
                 </div>
@@ -156,14 +159,15 @@
             <div class="container">
                 <div class="row">
                     <div class="card _contactInfo col-md-3">
-                        <img src="/images/sprites/contact-title.png" class="card-title" alt="Contact" />
+                        <img src="/images/sprites/contact-title.png" class="card-title hidden-xs hidden-sm" alt="Contact" />
+                        <h2 class="hidden-md hidden-lg">Contact Me</h2>
                         <p>Take a sec and say hi!<br/>
                         Whether you have a work enquiry or
                         simply wanna find out more, let’s talk.</p>
                         <a href="mailto:tvandervecht@gmail.com">Send me an email.</a>
                     </div>
                     <div class="card _contact col-md-7">
-                        <img src="/images/sprites/fairy.png" class="card-icon" />
+                        <img src="/images/sprites/fairy.png" class="card-icon hidden-xs hidden-sm" />
                         <form method="POST" action="./form.php">
                             <div class="row">
                                 <div class="col-md-4">

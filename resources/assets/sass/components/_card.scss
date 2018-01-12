@@ -4,7 +4,10 @@
     border:1px solid $brightBlue;
     padding: $spacing;
     margin-bottom:$spacing;
-    position:absolute;
+
+    @media (min-width:$screen-md) {
+        position:absolute;
+    }
 
     .card-icon, .card-title {
         position:absolute;
@@ -20,7 +23,9 @@
     }
 
     &._about {
-        right:15%;
+        @media (min-width:$screen-md) {
+            right:15%;
+        }
 
         .card-title {
             left:-56px;
@@ -47,7 +52,9 @@
     }
 
     &._funFacts {
-        right: 25%;
+        @media (min-width:$screen-md) {
+            right: 25%;
+        }
 
         .card-title {
             right:-90px;
@@ -69,7 +76,9 @@
     }
 
     &._contact {
-        right:10%;
+        @media (min-width:$screen-md) {
+            right:10%;
+        }
         .card-icon {
             top:50px;
             left:-17px;

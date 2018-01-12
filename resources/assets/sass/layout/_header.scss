@@ -1,5 +1,10 @@
 header, .header {
+    padding:200px 0;
     min-height:100vh;
+
+    @media(min-width:$screen-sm) {
+        padding:0;
+    }
 
     h1 {
         padding-top:$spacing * 2;
