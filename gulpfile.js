@@ -7,6 +7,7 @@ require('laravel-elixir-vueify');
 require('laravel-elixir-browserify-official');
 
 var inProduction = elixir.config.production;
+elixir.config.sourcemaps = false;
 
 elixir(function (mix) {
     /* ----
