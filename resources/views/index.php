@@ -45,7 +45,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Tina Vandervecht.<img src="/images/sprites/ocarina.png" /></h1>
+                        <h1>
+                            <span class="title"></span>
+                            <span class="blinking-cursor">|</span>
+                            <img src="/images/sprites/ocarina.png" />
+                        </h1>
                         <p>Developer. Passionate about trivia. Chronic talker.</p>
                         <a href="mailto:tvandervecht@gmail.com" class="available-flag">Available for freelance.</a>
                         <img src="/images/arrow-down.svg" alt="Scroll Down" class="scroll-down-img" />

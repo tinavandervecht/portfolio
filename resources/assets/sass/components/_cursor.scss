@@ -1,0 +1,5 @@
+.blinking-cursor {
+  @include animation(650ms blink step-end infinite);
+  font-family:$bodyFont;
+  margin-left:-16px;
+}

@@ -3,12 +3,14 @@ window.$ = window.jQuery = require('jquery');
 var particles = require('./components/background/particles.js');
 var validation = require('./components/validation.js');
 var easterEgg = require('./components/egg/zelda-easter-egg.js');
+var typewriter = require('./components/typewriter.js');
 var toastr = require('toastr');
 
 $(document).ready(function () {
     particles.init();
     validation.init();
     easterEgg.init();
+    typewriter.init();
 
     if (typeof successfulSubmission != 'undefined' && successfulSubmission) {
         toastr.options.closeButton = true;
