@@ -127,7 +127,7 @@
                 <div class="row">
                     <div class="insta-feed col-md-8" id="instaCard">
                         <img src="/images/sprites/instagram.png" class="card-title" />
-                        
+
                         <div class="row">
                         <?php
                             $json = file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token=1703444992.48ea03f.3d9056b104b84e889d7f8e1539804e51');
