@@ -223,6 +223,11 @@
                     <div class="content">
                         <h6 id="quit-game">QUIT GAME</h6>
                         <iframe id="game" width="800" height="400" frameborder="0" allowfullscreen></iframe>
+                        <div class="loading-text">
+                            <p>
+                                Loading... &#128521;
+                            </p>
+                        </div>
                         <p class="small-browser">
                             This game is played best on desktop. But feel proud in the knowledge that at least you found it!
                         </p>
