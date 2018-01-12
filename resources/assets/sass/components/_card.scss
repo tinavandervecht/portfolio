@@ -4,7 +4,7 @@
     border:1px solid $brightBlue;
     padding: $spacing;
     margin-bottom:$spacing;
-    position:relative;
+    position:absolute;
 
     .card-icon, .card-title {
         position:absolute;
@@ -12,8 +12,6 @@
 
     &._avatar {
         padding:0;
-        width:80%;
-        margin-top:90px;
 
         .card-title {
             right:-70px;
@@ -22,10 +20,7 @@
     }
 
     &._about {
-        width:60%;
-        margin-right:auto;
-        margin-left:auto;
-        margin-top:16px;
+        right:15%;
 
         .card-title {
             left:-56px;
@@ -39,7 +34,6 @@
     }
 
     &._toolsLanguages {
-        margin-top:40px;
         .card-title {
             left:-120px;
             top:-20px;
@@ -53,9 +47,8 @@
     }
 
     &._funFacts {
-        margin-top:200px;
-        width:70%;
-        float:right;
+        right: 25%;
+
         .card-title {
             right:-90px;
             top:30px;
@@ -68,7 +61,6 @@
     }
 
     &._contactInfo {
-        margin-top:100px;
         .card-title {
             right: -65px;
             top: 5px;
@@ -77,8 +69,7 @@
     }
 
     &._contact {
-        width:80%;
-        margin-top:150px;
+        right:10%;
         .card-icon {
             top:50px;
             left:-17px;

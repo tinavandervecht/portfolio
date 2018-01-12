@@ -4,12 +4,14 @@ var particles = require('./components/background/particles.js');
 var validation = require('./components/validation.js');
 var easterEgg = require('./components/egg/zelda-easter-egg.js');
 var typewriter = require('./components/typewriter.js');
+var parallax = require('./components/parallax.js');
 var toastr = require('toastr');
 
 $(document).ready(function () {
     particles.init();
     validation.init();
     easterEgg.init();
+    parallax.init();
     typewriter.init();
 
     if (typeof successfulSubmission != 'undefined' && successfulSubmission) {
