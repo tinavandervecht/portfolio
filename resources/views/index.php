@@ -8,6 +8,7 @@
     <meta name="description" content="The portfolio of Tina Vandervecht.">
     <meta name="author" content="Tina Vandervecht">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="google-site-verification" content="Usp5nBFgOCUn7dJnFJjqeG-7_9SuBPuc1qB2lR2bJSU" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,400|VT323:100,400" rel="stylesheet">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.css" async>
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -34,6 +35,17 @@
 </head>
 
 <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112380740-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112380740-1');
+    </script>
+
+
     <div id="particles-js"></div>
 
     <div class="navi">
@@ -47,9 +59,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1>
-                            <span class="title"></span>
+                            <span class="title"><span class="hidden">Tina Vandervecht</span></span>
                             <span class="blinking-cursor">|</span>
-                            <img src="/images/sprites/ocarina.png" class="title-icon" />
+                            <img src="/images/sprites/ocarina.png" class="title-icon" alt="Ocarina Icon" />
                         </h1>
                         <p>Developer. Passionate about trivia. Chronic talker.</p>
                         <a href="mailto:tvandervecht@gmail.com" class="available-flag">Available for freelance.</a>
@@ -67,7 +79,7 @@
                         <img src="/images/avatar.png" alt="Picture of Tina Vandervecht" style="max-width:100%"/>
                     </div>
                     <div class="card _about col-md-5">
-                        <img src="/images/sprites/mask.png" class="card-icon hidden-xs hidden-sm" />
+                        <img src="/images/sprites/mask.png" class="card-icon hidden-xs hidden-sm" alt="Mask Icon" />
                         <img src="/images/sprites/about-title.png" class="card-title hidden-xs hidden-sm" alt="About" />
                         <h2>I'm a full-stack developer with a passion for front end from London, Ontario.</h2>
                         <p>
@@ -91,7 +103,7 @@
             <div class="container">
                 <div class="row">
                     <div class="card _toolsLanguages col-md-3">
-                        <img src="/images/sprites/shield.png" class="card-icon hidden-xs hidden-sm" />
+                        <img src="/images/sprites/shield.png" class="card-icon hidden-xs hidden-sm" alt="Shield Icon" />
                         <img src="/images/sprites/tools-languages-title.png" class="card-title hidden-xs hidden-sm" alt="Tools & Languages" />
                         <h2 class="hidden-md hidden-lg">Tools & Languages</h2>
                         <ul>
@@ -108,7 +120,7 @@
                         </ul>
                     </div>
                     <div class="card _funFacts col-md-4">
-                        <img src="/images/sprites/chicken.png" class="card-icon hidden-xs hidden-sm" />
+                        <img src="/images/sprites/chicken.png" class="card-icon hidden-xs hidden-sm" alt="Chicken Icon" />
                         <img src="/images/sprites/fun-facts-title.png" class="card-title hidden-xs hidden-sm" alt="Fun Facts" />
                         <h2 class="hidden-md hidden-lg">Fun Facts</h2>
                         <ul>
@@ -129,7 +141,7 @@
             <div class="container">
                 <div class="row">
                     <div class="insta-feed col-md-8" id="instaCard">
-                        <img src="/images/sprites/instagram.png" class="card-title hidden-xs hidden-sm" />
+                        <img src="/images/sprites/instagram.png" class="card-title hidden-xs hidden-sm" alt="Instagram" />
 
                         <div class="row">
                         <?php
@@ -147,8 +159,8 @@
                                 </div>
                                 <?php endif;
                             endforeach; ?>
-                            <img src="/images/sprites/boomerang.png" class="card-icon _boomerang hidden-xs hidden-sm" />
-                            <img src="/images/sprites/bombchu.png" class="card-icon _bombchu hidden-xs hidden-sm" />
+                            <img src="/images/sprites/boomerang.png" class="card-icon _boomerang hidden-xs hidden-sm" alt="Boomerang Icon" />
+                            <img src="/images/sprites/bombchu.png" class="card-icon _bombchu hidden-xs hidden-sm" alt="Bombchu Icon" />
                         </div>
                     </div>
                 </div>
@@ -167,27 +179,27 @@
                         <a href="mailto:tvandervecht@gmail.com">Send me an email.</a>
                     </div>
                     <div class="card _contact col-md-7">
-                        <img src="/images/sprites/fairy.png" class="card-icon hidden-xs hidden-sm" />
+                        <img src="/images/sprites/fairy.png" class="card-icon hidden-xs hidden-sm" alt="Fairy Icon" />
                         <form method="POST" action="./form.php">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="input  <?php echo getEmptyError('first_name', 'empty'); ?>" id="first-name">
                                         <label for="first_name" class="sr-only">First Name</label>
-                                        <input type="text" name="first_name" placeholder="First Name" value="<?php echo getValue('first_name'); ?>" />
+                                        <input type="text" name="first_name" id="first_name" placeholder="First Name" value="<?php echo getValue('first_name'); ?>" />
                                         <small class="error-empty-message">First name is required.</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input <?php echo getEmptyError('last_name', 'empty'); ?>" id="last-name">
                                         <label for="last_name" class="sr-only">Last Name</label>
-                                        <input type="text" name="last_name" placeholder="Last Name" value="<?php echo getValue('last_name'); ?>" />
+                                        <input type="text" name="last_name" id="last_name" placeholder="Last Name" value="<?php echo getValue('last_name'); ?>" />
                                         <small class="error-empty-message">Last name is required.</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input <?php echo getEmptyError('email', 'empty'); ?> <?php echo getEmptyError('email', 'invalid'); ?>" id="email">
-                                        <label for="email" class="sr-only">Email</label>
-                                        <input type="text" name="email" placeholder="Email" value="<?php echo getValue('email'); ?>" />
+                                        <label for="email-input" class="sr-only">Email</label>
+                                        <input type="text" name="email" id="email-input" placeholder="Email" value="<?php echo getValue('email'); ?>" />
                                         <small class="error-empty-message">Email is required.</small>
                                         <small class="error-invalid-message">Email must be valid.</small>
                                     </div>
@@ -196,12 +208,12 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="input" id="website">
-                                        <label for="website" class="sr-only">Website</label>
-                                        <input type="text" name="website" placeholder="Website" value="<?php echo getValue('website'); ?>" />
+                                        <label for="website-input" class="sr-only">Website</label>
+                                        <input type="text" name="website" id="website-input" placeholder="Website" value="<?php echo getValue('website'); ?>" />
                                     </div>
                                     <div class="input <?php echo getEmptyError('message', 'empty');?>" id="message">
-                                        <label for="message" class="sr-only">Message</label>
-                                        <textarea name="message" rows="5" placeholder="Message"><?php echo getValue('message'); ?></textarea>
+                                        <label for="message-input" class="sr-only">Message</label>
+                                        <textarea name="message" rows="5" id="message-input" placeholder="Message"><?php echo getValue('message'); ?></textarea>
                                         <small class="error-empty-message">A message is required.</small>
                                     </div>
                                     <button type="submit">Send Message</button>
@@ -221,7 +233,7 @@
             <div class="modal-background">
                 <div class="modal">
                     <div class="content">
-                        <h6 id="quit-game">QUIT GAME</h6>
+                        <p class="h6" id="quit-game">QUIT GAME</p>
                         <iframe id="game" width="800" height="400" frameborder="0" allowfullscreen></iframe>
                         <div class="loading-text">
                             <p>
@@ -259,7 +271,7 @@
             session_destroy();
         ?>
     </div>
-    <script src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js" async></script>
+    <script src="js/app.js" async></script>
 </body>
 </html>
