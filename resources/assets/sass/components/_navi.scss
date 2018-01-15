@@ -9,6 +9,7 @@
     .speech {
         position:absolute;
         width:130px;
+        backface-visibility:hidden;
         top:-11px;
         left:13px;
         z-index:-1;
