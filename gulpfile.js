@@ -8,6 +8,7 @@ require('laravel-elixir-browserify-official');
 
 var inProduction = elixir.config.production;
 elixir.config.sourcemaps = false;
+elixir.config.assetsPath = 'assets';
 
 elixir(function (mix) {
     /* ----
@@ -33,8 +34,8 @@ elixir(function (mix) {
     /* ----
     Copying file overs
     ---- */
-    mix.copy('resources/assets/audio', 'public/audio');
-    mix.copy('resources/views', 'public');
-    mix.copy('resources/favicons', 'public');
-    mix.copy('resources/assets/game', 'public/game');
+    mix.copy('assets/audio', 'public/audio');
+    // mix.copy('resources/views', 'public');
+    mix.copy('assets/favicons', 'public');
+    mix.copy('assets/game', 'public/game');
 });

@@ -5,4 +5,13 @@ bower_components
 *.css.map
 .DS_Store
 
-public/**/*
+public/audio/*
+public/css/*
+public/game/**/*
+public/images/**/*
+public/js/*
+public/*.png
+public/*.svg
+public/*.ico
+public/*.xml
+public/manifest.*
