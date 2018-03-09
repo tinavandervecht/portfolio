@@ -34,7 +34,5 @@ elixir(function (mix) {
     /* ----
     Copying file overs
     ---- */
-    mix.copy('assets/audio', 'public/audio');
     mix.copy('assets/favicons', 'public');
-    mix.copy('assets/game', 'public/game');
 });
