@@ -7,10 +7,39 @@ ul {
 		padding-left: 0.5em;
 	}
 
-	&.icons {
+    &.contact-types {
+        list-style:none;
+
+        li {
+            font-weight: 600;
+        	line-height: 1.5;
+        	margin: 0 0 ($elementMargin * 0.25) 0;
+        	text-transform: uppercase;
+        	letter-spacing: $letterSpacing;
+
+            &.email {
+                &:before {
+                    font-family: 'FontAwesome';
+                    content: '\f2b7';
+                    margin:0 5px 0 -15px;
+                }
+            }
+
+            &.phone {
+                &:before {
+                    font-family: 'FontAwesome';
+                    content: '\f095';
+                    margin:0 5px 0 -12px;
+                }
+            }
+        }
+    }
+
+ 	&.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+        margin-top:3em;
 
 		li {
 			display: inline-block;

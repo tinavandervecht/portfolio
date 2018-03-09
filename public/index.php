@@ -13,6 +13,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/app.css" />
 
+    <?php $logoIcons = ['code','hand-peace-o','rocket','trash-o','heart-o'];?>
 </head>
 
 <body class="is-loading">
@@ -29,8 +30,8 @@
     <div id="wrapper">
 
         <header id="header">
-			<div class="logo">
-				<span class="fa fa-diamond"></span>
+			<div class="logo"> 
+                <span class="fa fa-<?php echo $logoIcons[rand(0, count($logoIcons) - 1)]; ?>"></span>
 			</div>
 			<div class="content">
 				<div class="inner">
@@ -48,16 +49,26 @@
 
         <section id="main">
             <article id="about">
-				<h2 class="major">About</h2>
+				<h2 class="major">Howdy</h2>
+                <h3>I'm a full-stack developer with a passion for front end from London, Ontario.</h3>
+                <p>
+                    I enjoy taking ambitious ideas and timelines and delivering simple (dare I say elegant?), creative results.
+                    When I'm not diving down the rabbit hole of code, I'm either learning random facts on the internet
+                    (because the internet never lies) or drinking wine and wishing I was the inquistor in Dragon Age: Inquisition.
+                </p>
 			</article>
 
             <article id="contact">
-				<h2 class="major">Contact</h2>
+				<h2 class="major">Let's Get in Touch!</h2>
+                <ul class="contact-types">
+                    <li class="email"><a href="mailto:tvandervecht@gmail.com">tvandervecht@gmail.com</a></li>
+                    <li class="phone">(226) 228-6628</li>
+                </ul>
 				<ul class="icons">
-					<li><a href="#" class="fa fa-twitter"><span class="sr-only">Twitter</span></a></li>
-					<li><a href="#" class="fa fa-instagram"><span class="sr-only">Instagram</span></a></li>
-                    <li><a href="#" class="fa fa-linkedin"><span class="sr-only">LinkedIn</span></a></li>
-					<li><a href="#" class="fa fa-github"><span class="sr-only">GitHub</span></a></li>
+					<li><a href="https://twitter.com/sc_nebulous" target="_blank" class="fa fa-twitter"><span class="sr-only">Twitter</span></a></li>
+					<li><a href="https://www.instagram.com/scatterednebulous/" target="_blank" class="fa fa-instagram"><span class="sr-only">Instagram</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/tinavv/" target="_blank" class="fa fa-linkedin"><span class="sr-only">LinkedIn</span></a></li>
+					<li><a href="https://github.com/tinavandervecht" target="_blank" class="fa fa-github"><span class="sr-only">GitHub</span></a></li>
 				</ul>
 			</article>
         </section>
