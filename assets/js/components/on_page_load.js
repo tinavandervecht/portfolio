@@ -8,6 +8,6 @@ function init ()
 	$(window).on('load', function() {
 		window.setTimeout(function() {
 			$('body').removeClass('is-loading');
-		}, 100);
+		}, 1000);
 	});
 }

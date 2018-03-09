@@ -37,13 +37,15 @@
 				<div class="inner">
 					<h1>Tina Vandervecht</h1>
 					<p>Developer. Passionate about trivia. Chronic talker.</p>
+                    <p>
+                        <u>Available for freelance.</u>
+                    </p>
 				</div>
 			</div>
 			<nav>
 				<ul>
 					<li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#funFacts">Facts</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -58,14 +60,34 @@
                     When I'm not diving down the rabbit hole of code, I'm either learning random facts on the internet
                     (because the internet never lies) or drinking wine and wishing I was the inquistor in Dragon Age: Inquisition.
                 </p>
+                <h4><a href="/tvandervecht_resume.pdf" target="_blank">Resume</a></h4>
 			</article>
 
             <article id="skills">
                 <h2 class="major">Skills</h2>
-            </article>
-
-            <article id="funFacts">
-                <h2 class="major">Fun Facts</h2>
+                <div class="list">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS/Sass</li>
+                        <li>Javascript/JQuery</li>
+                        <li>VueJS</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Laravel</li>
+                        <li>Wordpress</li>
+                        <li>Concrete5</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Sketch</li>
+                        <li>React</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
             </article>
 
             <article id="contact">

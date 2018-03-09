@@ -1,0 +1,13 @@
+#skills {
+    .list {
+        width:50%;
+        float:left;
+    }
+}
+
+@include breakpoint(medium) {
+    #skills .list {
+        float: none;
+        width:100%;
+    }
+}
