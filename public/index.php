@@ -42,6 +42,8 @@
 			<nav>
 				<ul>
 					<li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#funFacts">Facts</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -57,6 +59,14 @@
                     (because the internet never lies) or drinking wine and wishing I was the inquistor in Dragon Age: Inquisition.
                 </p>
 			</article>
+
+            <article id="skills">
+                <h2 class="major">Skills</h2>
+            </article>
+
+            <article id="funFacts">
+                <h2 class="major">Fun Facts</h2>
+            </article>
 
             <article id="contact">
 				<h2 class="major">Let's Get in Touch!</h2>
