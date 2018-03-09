@@ -1,0 +1,76 @@
+article {
+    @include vendor('transform', 'translateY(0.25rem)');
+    @include vendor('transition', (
+        'opacity #{$articleDuration} ease-in-out',
+        'transform #{$articleDuration} ease-in-out'
+    ));
+    padding: 2.5em;
+    position: relative;
+    width: 40em;
+    max-width: 100%;
+    background-color: transparentize($articleBgColor, 0.15);
+    @include vendor('border-radius', '4px');
+    @include vendor('opacity', '0');
+
+    &.active {
+        @include vendor('transform', 'translateY(0)');
+        @include vendor('opacity', '1');
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4em;
+        height: 4em;
+        cursor: pointer;
+        text-indent: 4em;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &:before {
+            @include vendor('transition', 'background-color #{$transitionDuration} ease-in-out');
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0.75em;
+            left: 0.75em;
+            width: 2.5em;
+            height: 2.5em;
+            @include vendor('border-radius', '100%');
+            background-position: center;
+            background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{$textColor}; stroke-width: 1; }</style><line x1="2" y1="2" x2="18" y2="18" /><line x1="18" y1="2" x2="2" y2="18" /></svg>');
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+        }
+
+        &:hover, &:active {
+            &:before {
+                background-color: rgba($textColor, 0.075);
+            }
+        }
+    }
+}
+
+@include breakpoint(small) {
+    article {
+        padding: 2em;
+
+        .close {
+            &:before {
+                top: 0.875em;
+                left: 0.875em;
+                width: 2.25em;
+                height: 2.25em;
+                background-size: 14px 14px;
+            }
+        }
+    }
+}
+
+@include breakpoint(xsmall) {
+    article {
+        padding: 2rem 1.5rem;
+    }
+}

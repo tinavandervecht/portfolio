@@ -1,0 +1,27 @@
+.logo {
+    width: 5.5em;
+    height: 5.5em;
+    line-height: 5.5em;
+    border: solid $borderWidth $textColor;
+    @include vendor('border-radius', '100%');
+
+    .fa {
+        &:before {
+            font-size: 2em;
+        }
+    }
+}
+
+@include breakpoint(small) {
+    .logo {
+        width: 4.75em;
+        height: 4.75em;
+        line-height: 4.75em;
+
+        .icon {
+            &:before {
+                font-size: 1.75em;
+            }
+        }
+    }
+}

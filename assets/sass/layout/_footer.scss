@@ -1,0 +1,29 @@
+#footer {
+	@include vendor('transition', (
+		'transform #{$articleDuration} ease-in-out',
+		'filter #{$articleDuration} ease-in-out',
+		'opacity #{$articleDuration} ease-in-out',
+	));
+	width: 100%;
+	max-width: 100%;
+	margin-top: 2em;
+	text-align: center;
+
+	.copyright {
+		letter-spacing: $letterSpacing;
+		font-size: 0.6em;
+        @include vendor('opacity', '0.75');
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+
+	body.is-article-visible & {
+		@include vendor('transform', 'scale(0.95)');
+		@include vendor('filter', 'blur(0.1rem)');
+        @include vendor('opacity', '0');
+	}
+
+	body.is-loading & {
+        @include vendor('opacity', '0');
+	}
+}

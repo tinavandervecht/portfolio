@@ -1,0 +1,88 @@
+nav {
+    ul {
+        @include vendor('display', 'flex');
+        margin-bottom: 0;
+        list-style: none;
+        padding-left: 0;
+        border: solid $borderWidth $textColor;
+        @include vendor('border-radius', '4px');
+
+        li {
+            padding-left: 0;
+            border-left: solid $borderWidth $textColor;
+
+            &:first-child {
+                border-left: 0;
+            }
+
+            a {
+                display: block;
+                min-width: 7.5em;
+                height: 2.75em;
+                line-height: 2.75em;
+                padding: 0 1.25em;
+                text-transform: uppercase;
+                letter-spacing: $letterSpacing;
+                font-size: 0.8em;
+                border-bottom: 0;
+
+                &:hover, :active {
+                    background-color: rgba($textColor, 0.075);
+                }
+            }
+        }
+    }
+
+    &.use-middle {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: calc(50% - #{$borderWidth * 1});
+            width: $borderWidth;
+            height: 100%;
+            background: $textColor;
+        }
+
+        ul {
+            li {
+                &.is-middle {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(xsmall) {
+    nav {
+        ul {
+            @include vendor('flex-direction', 'column');
+            min-width: 10em;
+            max-width: 100%;
+
+            li {
+                border-left: 0;
+                border-top: solid $borderWidth $textColor;
+
+                &:first-child {
+                    border-top: 0;
+                }
+
+                a {
+                    height: 3em;
+                    line-height: 3em;
+                    min-width: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        &.use-middle {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
