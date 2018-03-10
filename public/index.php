@@ -30,14 +30,15 @@
     <div id="wrapper">
 
         <header id="header">
-			<div class="logo"> 
+			<div class="logo">
                 <span class="fa fa-<?php echo $logoIcons[rand(0, count($logoIcons) - 1)]; ?>"></span>
 			</div>
 			<div class="content">
 				<div class="inner">
 					<h1>Tina Vandervecht</h1>
-					<p>Developer. Passionate about trivia. Chronic talker.</p>
-                    <p>
+					<p>
+                        Developer. Passionate about trivia. Chronic talker.
+                        <br />
                         <u>Available for freelance.</u>
                     </p>
 				</div>

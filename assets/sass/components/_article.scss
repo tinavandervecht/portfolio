@@ -25,9 +25,15 @@ article {
         width: 4em;
         height: 4em;
         cursor: pointer;
-        text-indent: 4em;
         overflow: hidden;
         white-space: nowrap;
+        text-align:center;
+        padding-top:1.2em;
+
+        .fa {
+            @include vendor('transition', 'opacity #{$transitionDuration} ease-in-out');
+            @include vendor('opacity', '0');
+        }
 
         &:before {
             @include vendor('transition', 'background-color #{$transitionDuration} ease-in-out');
@@ -46,6 +52,10 @@ article {
         }
 
         &:hover, &:active {
+            .fa {
+                @include vendor('opacity', '1');
+            }
+
             &:before {
                 background-color: rgba($textColor, 0.075);
             }
