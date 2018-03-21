@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Tina Vandervecht - Developer</title>
-    <meta name="description" content="The portfolio of Tina Vandervecht.">
-    <meta name="author" content="Tina Vandervecht">
+    <title>Tina Vandervecht</title>
+
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="google-site-verification" content="Usp5nBFgOCUn7dJnFJjqeG-7_9SuBPuc1qB2lR2bJSU" />
 
@@ -17,6 +16,19 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="The portfolio of Tina Vandervecht, a full-stack developer from London, Ontario.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tina Vandervecht">
+    <meta name="twitter:description" content="The portfolio of Tina Vandervecht, a full-stack developer from London, Ontario.">
+    <meta name="twitter:image" content="https://tinavv.com/images/meta_image.jpg">
+    <meta name="twitter:creator" content="@sc_nebulous">
+    <meta property="og:title" content="Tina Vandervecht">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://tinavv.com/">
+    <meta property="og:image" content="https://tinavv.com/images/meta_image.jpg">
+    <meta property="og:description" content="The portfolio of Tina Vandervecht, a full-stack developer from London, Ontario.">
+    <meta property="og:site_name" content="Tina Vandervecht">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/app.css" />
@@ -119,7 +131,7 @@
         </footer>
 
     </div>
-    <div id="bg" data-img-key="<?php echo rand(1, 7) ?>">
+    <div id="bg" data-img-key="<?php echo rand(1, 7); ?>">
         <span class="after"></span>
     </div>
 
