@@ -30,11 +30,6 @@ article {
         text-align:center;
         padding-top:1.2em;
 
-        .fa {
-            @include vendor('transition', 'opacity #{$transitionDuration} ease-in-out');
-            @include vendor('opacity', '0');
-        }
-
         &:before {
             @include vendor('transition', 'background-color #{$transitionDuration} ease-in-out');
             content: '';
@@ -46,16 +41,12 @@ article {
             height: 2.5em;
             @include vendor('border-radius', '100%');
             background-position: center;
-            background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{$textColor}; stroke-width: 1; }</style><line x1="2" y1="2" x2="18" y2="18" /><line x1="18" y1="2" x2="2" y2="18" /></svg>');
-            background-size: 20px 20px;
+            background-image: url('../images/icons/close.svg');
+            background-size: 17px 17px;
             background-repeat: no-repeat;
         }
 
         &:hover, &:active {
-            .fa {
-                @include vendor('opacity', '1');
-            }
-
             &:before {
                 background-color: rgba($textColor, 0.075);
             }

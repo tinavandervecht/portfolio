@@ -3,7 +3,7 @@ exports.init = init;
 function init()
 {
     $('#main').children('article').each(function() {
-		$('<div class="close"><span class="fa fa-close"></span></div>')
+		$('<div class="close"></div>')
 		.appendTo($(this))
 		.on('click', function() {
 			location.hash = '';
