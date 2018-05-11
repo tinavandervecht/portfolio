@@ -66,6 +66,7 @@
 			<nav>
 				<ul>
 					<li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
                     <li><a href="#skills">Skills</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -82,6 +83,27 @@
                     (because the internet never lies) or drinking wine and wishing I was the inquistor in Dragon Age: Inquisition.
                 </p>
                 <h4><a href="/tvandervecht_resume.pdf" target="_blank">Resume</a></h4>
+			</article>
+
+            <article id="work">
+				<h2 class="major">Work</h2>
+                <div class="work_row">
+                    <div class="clearfix">
+                        <div class="work_item" id="goodlife" style="background:url('/images/work/goodlife.jpg')"></div>
+                        <div class="work_item" id="everspring" style="background:url('/images/work/everspring.png')"></div>
+                        <div class="work_item" id="turkstra" style="background:url('/images/work/turkstra.png')"></div>
+                    </div>
+                    <div class="work_details">
+                        <h3 class="header"></h3>
+                        <div class="content"></div>
+                        <h4>
+                            <a href="#" target="_blank">View Website</a>
+                            <button type="button">View Code Snippet</button>
+                        </h4>
+                    </div>
+                </div>
+                <!-- <div class="work_item" id="strategic" style="background:url('/images/meta_image.jpg')"></div> -->
+                <!-- <div class="work_item" id="yazdani" style="background:url('/images/meta_image.jpg')"></div> -->
 			</article>
 
             <article id="skills">
