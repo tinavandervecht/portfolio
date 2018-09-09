@@ -1,0 +1,39 @@
+{
+    "goodlife": {
+        "title": "Goodlife #sexysmartstrong",
+        "thumbnail": "/images/work/goodlife.jpg",
+        "description": "I was the lead developer on the #sexysmartstrong website while at Arcane. A beautiful campaign, the #sexysmartstrong website pulled in Twitter, Facebook, and Instagram posts to build a never ending page of people eating, living, and being better while posting about it online with the #sexysmartstrong hashtag. I also got to build out a fun little quiz that, after answering a dozen questions, would return with your \"Sprit Animal\". It was a very fun project!"
+    },
+    "everspring": {
+        "title": "Everspring Farms",
+        "thumbnail": "/images/work/everspring.png",
+        "website": "http://everspringfarms.ca",
+        "description": "Everspring Farms was a fun project I developed while at Arcane that connected a Concrete5 framework for the branded website aspects with a drupal online store, since the client wasn't interested in having Arcane re-do their store."
+    },
+    "turkstra": {
+        "title": "Turkstra",
+        "thumbnail": "/images/work/turkstra.png",
+        "website": "http://turkstralumber.com",
+        "description": "A multi-site project, I was the lead developer at Arcane working on developing several cohesive, connected websites that, while all unique, worked together to create a smooth experience. All websites were built on Concrete5 to allow easy data management for the client."
+    },
+    "athleticfluency": {
+        "title": "Athletic Fluency",
+        "thumbnail": "/images/work/athleticfluency.png",
+        "website": "http://athleticfluency.com",
+        "description": "A local company, Athletic Fluency wants to make waves in the London athletic crowd. To help with that, they asked for a simple, 1 page website to showcase their differences and achievements. Built on Concrete5, this website was designed to expand their influence and help put them on the map.",
+        "code_link": "https://github.com/tinavandervecht/athletic-fluency"
+    },
+    "teaseandcompany": {
+        "title": "Tease & Company",
+        "thumbnail": "/images/work/teaseandcompany.png",
+        "website": "http://teaseandcompany.com",
+        "description": "A local company, Tease & Company wanted a fun, clean website to help further their brand and increase their online presence. Designed by Alicia Bulhoes (https://github.com/aliciabulhoes), this website was built on Concrete5 to make it easy for the client to update and manage their own content.",
+        "code_link": "https://github.com/tinavandervecht/tease_company"
+    },
+    "iecs": {
+        "title": "IECS",
+        "thumbnail": "/images/work/iecs.png",
+        "description": "A company I was connected with through Fanshawe's Reactr team, I took on the project halfway through to work closely with the company's engineers to build out a calculator that, when given all the data, will return the proper product IECS can supply for the project. This project was built on CodeIgniter with Javascript, and was a very fun experience with some intense math functions.",
+        "code_link": "https://github.com/tinavandervecht/iecs"
+    }
+}

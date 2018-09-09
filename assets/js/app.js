@@ -6,10 +6,12 @@ var on_show = require('./components/on_show');
 var on_hide = require('./components/on_hide');
 var events = require('./components/events');
 var articles = require('./components/articles');
+var work = require('./components/work');
 
 $(document).ready(function () {
     on_page_load.init();
     navigation.init();
+    work.init();
 
 	var	$main = $('#main'),
         delay = 325,
@@ -19,7 +21,7 @@ $(document).ready(function () {
     on_hide.init($main, delay, locked);
 
 	articles.init();
-	events.init($main);
+    events.init($main);
 
 	$main.hide();
 	$('#main').children('article').hide();

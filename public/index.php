@@ -89,21 +89,23 @@
 				<h2 class="major">Work</h2>
                 <div class="work_row">
                     <div class="clearfix">
-                        <div class="work_item" id="goodlife" style="background:url('/images/work/goodlife.jpg')"></div>
-                        <div class="work_item" id="everspring" style="background:url('/images/work/everspring.png')"></div>
-                        <div class="work_item" id="turkstra" style="background:url('/images/work/turkstra.png')"></div>
+                        <?php
+                            $string = file_get_contents("./work.json");
+                            $workObjects = json_decode($string, true);
+
+                            foreach ($workObjects as $key => $work): ?>
+                                <div class="work_item"
+                                    id="<?php echo $key; ?>"
+                                    style="background:url(<?php echo $work['thumbnail']; ?>)">
+                                </div>
+                            <?php endforeach;
+                        ?>
                     </div>
                     <div class="work_details">
-                        <h3 class="header"></h3>
+                        <div class="close"></div>
                         <div class="content"></div>
-                        <h4>
-                            <a href="#" target="_blank">View Website</a>
-                            <button type="button">View Code Snippet</button>
-                        </h4>
                     </div>
                 </div>
-                <!-- <div class="work_item" id="strategic" style="background:url('/images/meta_image.jpg')"></div> -->
-                <!-- <div class="work_item" id="yazdani" style="background:url('/images/meta_image.jpg')"></div> -->
 			</article>
 
             <article id="skills">
@@ -115,6 +117,7 @@
                         <li>CSS/Sass</li>
                         <li>Javascript/JQuery</li>
                         <li>VueJS</li>
+                        <li>React</li>
                         <li>PHP</li>
                         <li>SQL</li>
                     </ul>
@@ -127,7 +130,6 @@
                         <li>Concrete5</li>
                         <li>Adobe Photoshop</li>
                         <li>Sketch</li>
-                        <li>React</li>
                         <li>Git</li>
                     </ul>
                 </div>
