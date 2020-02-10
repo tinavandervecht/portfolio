@@ -4,14 +4,3 @@ bower_components
 .sass-cache/
 *.css.map
 .DS_Store
-
-public/audio/*
-public/css/*
-public/game/**/*
-public/images/**/*
-public/js/*
-public/*.png
-public/*.svg
-public/*.ico
-public/*.xml
-public/manifest.*
