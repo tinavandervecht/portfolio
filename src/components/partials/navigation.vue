@@ -7,10 +7,10 @@
             <span @click="toggleNav()">
                 <span class="fas fa-window-close"></span>
             </span>
-            <styled-button text="About" link="#" />
-            <styled-button text="Work" link="#" />
-            <styled-button text="Skills" link="#" />
-            <styled-button text="Contact" link="#" />
+            <styled-button text="About" link="#" color="#FFFFFF" is-nav-btn />
+            <styled-button text="Work" link="#" color="#FFFFFF" is-nav-btn />
+            <styled-button text="Skills" link="#" color="#FFFFFF" is-nav-btn />
+            <styled-button text="Contact" link="#" color="#FFFFFF" is-nav-btn />
         </nav>
     </div>
 </template>
@@ -39,7 +39,7 @@
 
 <style scoped>
     .fa-bars, .fa-window-close {
-        padding: 25px 50px;
+        margin: 25px 50px;
         color: white;
         cursor:pointer;
         font-size:25px;
@@ -54,7 +54,7 @@
         left:-100%;
         width:100%;
         height: 100%;
-        background: rgba(0,0,0,0.7);
+        background: rgba(20,28,58,0.8);
         transition: left 300ms ease-in-out;
     }
 

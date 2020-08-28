@@ -2,17 +2,20 @@
     <div id="app">
         <navigation />
         <intro />
+        <about />
     </div>
 </template>
 
 <script>
-    import intro from './partials/intro.vue';
     import navigation from './partials/navigation.vue';
+    import intro from './sections/intro.vue';
+    import about from './sections/about.vue';
 
     export default {
         components: {
+            navigation,
             intro,
-            navigation
+            about,
         }
     };
 </script>
@@ -28,7 +31,7 @@
 
     body {
         margin:0;
-        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Nunito', sans-serif;
     }
 
     body /deep/ #header {

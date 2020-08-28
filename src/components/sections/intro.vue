@@ -2,7 +2,7 @@
     <header id="header">
         <div id="intro">
             <p>
-                Hello, I'm
+                Howdy, I'm
                 <span></span>
             </p>
             <h1>Tina Vandervecht</h1>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    import particles from './particles.vue';
+    import particles from '../partials/particles.vue';
 
     export default {
         components: {
@@ -63,6 +63,7 @@
     }
 
     p {
+        font-family: 'Fjalla One', sans-serif;
         color:white;
         margin: 0;
         display:flex;
