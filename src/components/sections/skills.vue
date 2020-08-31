@@ -12,7 +12,7 @@
                     background-color="#ff99be"
                 />
                 <vue-word-cloud
-                    style="height: 100px; width: 100%;"
+                    style="height: 300px; width: 100%;"
                     :words="languages"
                     font-family="Finger Paint"
                     animation-easing="ease-in-out"
@@ -25,12 +25,12 @@
                 @mouseleave="activeSkill = null"
             >
                 <styled-title
-                    title="Tools"
+                    title="Programs/Tools"
                     text-color="#141c3a"
                     background-color="#2c8de8"
                 />
                 <vue-word-cloud
-                    style="height: 100px; width: 100%;"
+                    style="height: 300px; width: 100%;"
                     :words="tools"
                     font-family="Finger Paint"
                     animation-easing="ease-in-out"
@@ -107,7 +107,7 @@
         .skill {
             float: left;
             width: 50%;
-            transition: .3s width ease-in-out;
+            transition: 2s width ease-in-out;
         }
 
         .skill.active {
