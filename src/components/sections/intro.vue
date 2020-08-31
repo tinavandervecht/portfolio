@@ -1,10 +1,12 @@
 <template>
     <header id="header">
         <div id="intro">
-            <p>
-                Howdy, I'm
-                <span></span>
-            </p>
+            <styled-title
+                title="Howdy, I'm"
+                text-color="#FFFFFF"
+                background-color="transparent"
+                class="mb-0"
+            />
             <h1>Tina Vandervecht</h1>
         </div>
         <div class="hero-img">
@@ -16,10 +18,12 @@
 
 <script>
     import particles from '../partials/particles.vue';
+    import styledTitle from '../partials/styled-title.vue';
 
     export default {
         components: {
-            particles
+            particles,
+            styledTitle
         },
 
         mounted() {

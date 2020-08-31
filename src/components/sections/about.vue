@@ -12,10 +12,11 @@
                     <img src="/images/avatar.png" alt="Avatar" />
                 </div>
                 <div class="col-xl-5">
-                    <p class="title">
-                        About Me
-                        <span></span>
-                    </p>
+                    <styled-title
+                        title="About Me"
+                        text-color="#141c3a"
+                        background-color="#f0f0f0"
+                    />
                     <img src="/images/avatar.png" alt="Avatar" class="d-xl-none mb-5" />
                     <h2><strong>Hi, I'm Tina! Nice to meet you.</strong></h2>
                     <h3>
@@ -40,8 +41,11 @@
 
 <script>
     import styledButton from '../partials/styled-button.vue';
+    import styledTitle from '../partials/styled-title.vue';
+
     export default {
         components: {
+            styledTitle,
             styledButton
         }
     };
@@ -72,36 +76,6 @@
         max-width:100%;
         margin:0 auto;
         display:block;
-    }
-
-    .title {
-        font-family: 'Fjalla One', sans-serif;
-        color:#141c3a;
-        margin: 0;
-        display:flex;
-        align-items: center;
-        position:relative;
-        z-index:2;
-        margin-bottom:30px;
-    }
-
-    .title:after {
-        content: '';
-        background:#f0f0f0;
-        height:calc(100% + 10px);
-        width:35px;
-        position:absolute;
-        top:-5px;
-        left:-5px;
-        z-index:-1;
-    }
-
-    .title span {
-        height:1px;
-        display:inline-block;
-        width: 50px;
-        background: #141c3a;
-        margin-left:5px;
     }
 
     h2, h3 {

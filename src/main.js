@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import App from './components/App.vue';
+import VueWordCloud from 'vuewordcloud';
 
 new Vue({
     el: '#app',

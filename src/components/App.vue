@@ -3,6 +3,7 @@
         <navigation />
         <intro />
         <about />
+        <skills />
     </div>
 </template>
 
@@ -10,12 +11,14 @@
     import navigation from './partials/navigation.vue';
     import intro from './sections/intro.vue';
     import about from './sections/about.vue';
+    import skills from './sections/skills.vue';
 
     export default {
         components: {
             navigation,
             intro,
             about,
+            skills,
         }
     };
 </script>
