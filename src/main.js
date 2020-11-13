@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import App from './components/App.vue';
-import VueWordCloud from 'vuewordcloud';
+import VueParticles from 'vue-particles';
+
+Vue.use(VueParticles);
 
 new Vue({
     el: '#app',

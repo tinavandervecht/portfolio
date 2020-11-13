@@ -35,6 +35,7 @@
     body {
         margin:0;
         font-family: 'Nunito', sans-serif;
+        overflow-x:hidden;
     }
 
     body /deep/ #header {
