@@ -4,6 +4,7 @@
         <intro />
         <about />
         <skills />
+        <easter-egg />
     </div>
 </template>
 
@@ -12,6 +13,7 @@
     import intro from './sections/intro.vue';
     import about from './sections/about.vue';
     import skills from './sections/skills.vue';
+    import easterEgg from './partials/easter-egg.vue';
 
     export default {
         components: {
@@ -19,7 +21,8 @@
             intro,
             about,
             skills,
-        }
+            easterEgg
+        },
     };
 </script>
 
