@@ -4,6 +4,7 @@
         <intro />
         <about />
         <skills />
+        <work />
         <easter-egg />
     </div>
 </template>
@@ -13,6 +14,7 @@
     import intro from './sections/intro.vue';
     import about from './sections/about.vue';
     import skills from './sections/skills.vue';
+    import work from './sections/work.vue';
     import easterEgg from './partials/easter-egg.vue';
 
     export default {
@@ -21,6 +23,7 @@
             intro,
             about,
             skills,
+            work,
             easterEgg
         },
     };

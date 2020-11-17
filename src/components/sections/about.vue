@@ -92,9 +92,6 @@
         z-index: -1;
     }
 
-    .blob {
-    }
-
     .blob._one {
         position: absolute;
         height: 70%;
@@ -141,12 +138,12 @@
     }
 
     @keyframes blobs {
-      from {
-        border-radius: 59% 41% 64% 36%/79% 63% 37% 21%;
-      }
-      to {
-        border-radius: 50% 50% 66% 34%/33% 34% 66% 67%;
-      }
+        from {
+            border-radius: 59% 41% 64% 36%/79% 63% 37% 21%;
+        }
+        to {
+            border-radius: 50% 50% 66% 34%/33% 34% 66% 67%;
+        }
     }
 
     @keyframes grow {

@@ -14,13 +14,14 @@
                 :clickEffect="false"
             />
         </div>
-        <div class="clearfix">
-            <div class="skill">
-                <styled-title
-                    title="Languages I Know"
-                    text-color="#141c3a"
-                    background-color="#5aa6ed"
-                />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <styled-title
+                        title="Languages I Know"
+                        text-color="#141c3a"
+                        background-color="#5aa6ed"
+                    />
                     <div class="tags">
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
@@ -32,22 +33,25 @@
                         <span class="tag">PHP</span>
                         <span class="tag">MySQL</span>
                     </div>
-            </div>
-            <div class="skill">
-                <styled-title
-                    title="Programs I Use"
-                    text-color="#141c3a"
-                    background-color="#5aa6ed"
-                />
-                <div class="tags">
-                    <span class="tag">Laravel</span>
-                    <span class="tag">Wordpress</span>
-                    <span class="tag">Concrete5</span>
-                    <span class="tag">Adobe Photoshop</span>
-                    <span class="tag">Sketch</span>
-                    <span class="tag">Git</span>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <styled-title
+                        title="Programs I Use"
+                        text-color="#141c3a"
+                        background-color="#5aa6ed"
+                    />
+                    <div class="tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Wordpress</span>
+                        <span class="tag">Concrete5</span>
+                        <span class="tag">Adobe Photoshop</span>
+                        <span class="tag">Sketch</span>
+                        <span class="tag">Git</span>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </template>
@@ -65,9 +69,9 @@
 <style scoped>
     section {
         background: #ff99be;
-        padding: 100px 50px;
+        padding: 100px 0;
         position:relative;
-        margin-bottom:200px;
+        margin-bottom:100px;
     }
 
     .skill {
@@ -82,6 +86,7 @@
         left:0;
         top:0;
     }
+
     /deep/ #particles-js {
         width:100%;
     }
@@ -113,6 +118,7 @@
     .tags {
         margin-left:-10px;
     }
+
     .tag {
         background:#EDEDED;
         padding:5px 25px;
@@ -121,34 +127,18 @@
         display:inline-block;
     }
 
-    @keyframes wiggleIn {
-      from {
-          transform:rotate(-6deg);
-      }
-      to {
-          transform:rotate(-5deg);
-      }
-    }
-
-    @keyframes wiggleOut {
-      from {
-          transform:rotate(7deg);
-      }
-      to {
-          transform:rotate(5deg);
-      }
-    }
-
     @media(min-width: 1200px) {
         section {
-            padding: 200px;
+            padding: 200px 0;
         }
+    }
 
-        .skill {
-            float: left;
-            width: 40%;
-            margin-left:5%;
-            margin-top:0;
+    @keyframes wiggleIn {
+        from {
+            transform:rotate(-6deg);
+        }
+        to {
+            transform:rotate(-5deg);
         }
     }
 </style>
