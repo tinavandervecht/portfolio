@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="skills">
         <div class="particle-wrapper">
             <vue-particles
                 color="#ffc7db"

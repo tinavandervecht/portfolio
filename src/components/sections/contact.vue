@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="contact">
         <div id="background">
             <div class='ripple-background'>
                 <div class='circle xxlarge'></div>

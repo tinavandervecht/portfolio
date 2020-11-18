@@ -41,6 +41,10 @@
         background: #2c8de8;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         margin:0;
         font-family: 'Nunito', sans-serif;

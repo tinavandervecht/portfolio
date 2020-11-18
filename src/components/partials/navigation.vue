@@ -1,16 +1,16 @@
 <template>
     <div>
         <span @click="toggleNav()">
-            <span class="fas fa-bars" ></span>
+            <span class="fas fa-bars"></span>
         </span>
         <nav id="nav" :class="navOpened ? 'opened' : ''">
             <span @click="toggleNav()">
                 <span class="fas fa-window-close"></span>
             </span>
-            <styled-button text="About" link="#" color="#FFFFFF" is-nav-btn />
-            <styled-button text="Work" link="#" color="#FFFFFF" is-nav-btn />
-            <styled-button text="Skills" link="#" color="#FFFFFF" is-nav-btn />
-            <styled-button text="Contact" link="#" color="#FFFFFF" is-nav-btn />
+            <styled-button text="About" link="#about" color="#FFFFFF" is-nav-btn />
+            <styled-button text="Work" link="#work" color="#FFFFFF" is-nav-btn />
+            <styled-button text="Skills" link="#skills" color="#FFFFFF" is-nav-btn />
+            <styled-button text="Contact" link="#contact" color="#FFFFFF" is-nav-btn />
         </nav>
     </div>
 </template>
