@@ -1,6 +1,6 @@
 <template>
     <div :class="['btn-wrapper', {'nav-btn': isNavBtn}]" :style="`--color: ${color}`">
-        <a class="btn-slice" :href="link" :target="target">
+        <a class="btn-slice" :href="link" :target="target" @click="$emit('btn-clicked')">
             <div class="top"><span>{{ text }}</span></div>
             <div class="bottom"><span>{{ text }}</span></div>
         </a>

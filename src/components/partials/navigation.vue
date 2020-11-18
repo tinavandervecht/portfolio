@@ -7,10 +7,34 @@
             <span @click="toggleNav()">
                 <span class="fas fa-window-close"></span>
             </span>
-            <styled-button text="About" link="#about" color="#FFFFFF" is-nav-btn />
-            <styled-button text="Work" link="#work" color="#FFFFFF" is-nav-btn />
-            <styled-button text="Skills" link="#skills" color="#FFFFFF" is-nav-btn />
-            <styled-button text="Contact" link="#contact" color="#FFFFFF" is-nav-btn />
+            <styled-button
+                text="About"
+                link="#about"
+                color="#FFFFFF"
+                is-nav-btn
+                @btn-clicked="checkToggleNav()"
+            />
+            <styled-button
+                text="Work"
+                link="#work"
+                color="#FFFFFF"
+                is-nav-btn
+                @btn-clicked="checkToggleNav()"
+            />
+            <styled-button
+                text="Skills"
+                link="#skills"
+                color="#FFFFFF"
+                is-nav-btn
+                @btn-clicked="checkToggleNav()"
+            />
+            <styled-button
+                text="Contact"
+                link="#contact"
+                color="#FFFFFF"
+                is-nav-btn
+                @btn-clicked="checkToggleNav()"
+            />
         </nav>
     </div>
 </template>
@@ -30,6 +54,12 @@
         },
 
         methods: {
+            checkToggleNav() {
+                if (window.innerWidth < 715) {
+                    this.toggleNav();
+                }
+            },
+
             toggleNav() {
                 this.navOpened = ! this.navOpened;
             }

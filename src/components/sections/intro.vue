@@ -65,8 +65,8 @@
     .by-line {
         color:#FCB9D1;
         background:#11599c;
-        font-size:1.4em;
         padding:0 4px;
+        display:inline-block;
     }
 
     h1 {
@@ -114,6 +114,10 @@
     @media(min-width:600px) {
         h1 {
             font-size:5em;
+        }
+
+        .by-line {
+            font-size:1.4em;
         }
     }
 
