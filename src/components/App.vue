@@ -5,6 +5,7 @@
         <about />
         <skills />
         <work />
+        <contact />
         <easter-egg />
     </div>
 </template>
@@ -15,6 +16,7 @@
     import about from './sections/about.vue';
     import skills from './sections/skills.vue';
     import work from './sections/work.vue';
+    import contact from './sections/contact.vue';
     import easterEgg from './partials/easter-egg.vue';
 
     export default {
@@ -24,6 +26,7 @@
             about,
             skills,
             work,
+            contact,
             easterEgg
         },
     };
