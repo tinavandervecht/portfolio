@@ -32,12 +32,14 @@
                         <span class="tag">React</span>
                         <span class="tag">PHP</span>
                         <span class="tag">MySQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">webpack</span>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-5">
                     <styled-title
-                        title="Programs I Use"
+                        title="Programs/Frameworks I Use"
                         text-color="#141c3a"
                         background-color="#5aa6ed"
                     />
@@ -48,6 +50,9 @@
                         <span class="tag">Adobe Photoshop</span>
                         <span class="tag">Sketch</span>
                         <span class="tag">Git</span>
+                        <span class="tag">CodeIgniter</span>
+                        <span class="tag">Ghost</span>
+                        <span class="tag">Adobe InDesign</span>
                     </div>
                 </div>
             </div>
@@ -71,7 +76,7 @@
         background: #ff99be;
         padding: 100px 0;
         position:relative;
-        margin-bottom:100px;
+        margin-bottom:50px;
     }
 
     .skill {
@@ -117,6 +122,7 @@
 
     .tags {
         margin-left:-10px;
+        margin-bottom:50px;
     }
 
     .tag {
@@ -125,6 +131,12 @@
         border-radius:25px;
         margin:5px;
         display:inline-block;
+    }
+
+    @media(min-width: 768px) {
+        .tags {
+            margin-bottom:0;
+        }
     }
 
     @media(min-width: 1200px) {

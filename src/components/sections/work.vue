@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <img src="/images/icons/walkman.png" class="walkman-icon" alt="Walkman" />
                         <img class="card-img-top" src="/images/work/athleticfluency.png" alt="Website Image">
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <img class="card-img-top" src="/images/work/everspring.png" alt="Website Image">
                         <div class="card-body">
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <img src="/images/icons/gameboy.png" class="gameboy-icon" alt="Gameboy" />
                         <img class="card-img-top" src="/images/work/teaseandcompany.png" alt="Website Image">
@@ -58,7 +58,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <img src="/images/icons/television.png" class="television-icon" alt="Television" />
                         <img class="card-img-top" src="/images/work/goodlife.jpg" alt="Website Image">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <img class="card-img-top" src="/images/work/turkstra.png" alt="Website Image">
                         <div class="card-body">
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <img src="/images/icons/microphone.png" class="microphone-icon" alt="Microphone" />
                         <img class="card-img-top" src="/images/work/iecs.png" alt="Website Image">

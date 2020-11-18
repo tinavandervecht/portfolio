@@ -8,6 +8,9 @@
                 class="mb-0"
             />
             <h1>Tina Vandervecht</h1>
+            <p class="float-lg-right mr-3 by-line">
+                &#60; available for freelance &#62;
+            </p>
         </div>
         <div class="hero-img">
             <img ref="movingImage" src="/images/robot.png" />
@@ -59,6 +62,13 @@
         z-index:2;
     }
 
+    .by-line {
+        color:#FCB9D1;
+        background:#11599c;
+        font-size:1.4em;
+        padding:0 4px;
+    }
+
     h1 {
         font-family: 'Cabin Sketch', cursive;
         color:white;
@@ -66,7 +76,7 @@
         margin:0;
     }
 
-    p {
+    p, h3 {
         font-family: 'Fjalla One', sans-serif;
         color:white;
         margin: 0;
@@ -113,6 +123,7 @@
         }
         #header #intro {
             padding-top:320px;
+            max-width:720px;
         }
 
         .hero-img img {
