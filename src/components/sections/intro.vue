@@ -49,6 +49,7 @@
 <style scoped>
     #header {
         background-color: #2c8de8;
+        padding-top:10px;
         background-image: linear-gradient(to right, #2c8de8 0%, #2cbfe8 35%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -121,9 +122,15 @@
         }
     }
 
+    @media(min-width:715px) {
+        #header {
+            padding-top:100px;
+        }
+    }
     @media(min-width:940px) {
         #header {
             height:750px;
+            padding-top:0;
         }
         #header #intro {
             padding-top:320px;

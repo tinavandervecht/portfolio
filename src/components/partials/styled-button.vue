@@ -114,7 +114,7 @@
         width: 100%;
     }
 
-    @media(max-width:715px) {
+    @media(max-width:714px) {
         .nav-btn.btn-wrapper {
             display:block;
             margin:0 auto;

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span @click="toggleNav()">
+        <span @click="toggleNav()" class="mobile-nav-btn">
             <span class="fas fa-bars"></span>
         </span>
         <nav id="nav" :class="navOpened ? 'opened' : ''">
@@ -92,6 +92,10 @@
         left:0%;
     }
 
+    .mobile-nav-btn {
+        position:absolute;
+    }
+
     @media(min-width:715px) {
         .fa-bars, .fa-window-close {
             display:none;
@@ -105,6 +109,9 @@
             padding: 25px 50px;
             position:relative;
             z-index:1;
+            position:absolute;
+            top:0;
+            height:auto;
         }
 
         #nav /deep/ a {
